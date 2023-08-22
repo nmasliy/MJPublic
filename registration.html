@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MJPublic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/libs.css" rel="stylesheet" />
+    <link href="css/nouislider.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./" class="header__logo">
+          <img src="img/logo.png" alt="MJPublic logo" />
+          <span>MJPublic</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="auth">
+      <div class="container">
+        <div class="auth__inner">
+          <div class="auth__content-wrapper">
+            <ul class="auth__tabs">
+              <li class="auth__tab" data-tabs="login">Вход</li>
+              <li class="auth__tab is-active" data-tabs="registration">Регистрация</li>
+            </ul>
+            <div class="auth__content">
+              <div class="auth__content-item" data-tabs="login">
+                <form action="#" class="auth__form form">
+                  <label class="form__item">
+                    <input
+                      type="email"
+                      class="form__input form__input--email"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                  <label class="form__item">
+                    <input
+                      type="password"
+                      class="form__input form__input--password"
+                      placeholder="Пароль"
+                    />
+                  </label>
+                  <label class="form__checkbox">
+                    <input type="checkbox" />
+                    <span class="form__checkbox-text"
+                      >Регистрируясь, я принимаю пользовательское соглашение,
+                      политику конфиденциальности и даю согласие на обработку
+                      персональных данных</span
+                    >
+                  </label>
+                  <div class="text-center">
+                    <button class="form__btn btn text-uppercase">вход</button>
+                  </div>
+                  <div class="text-center">
+                    <button data-modal-open="modal-password" class="form__caption">Забыли пароль?</button>
+                  </div>
+                </form>
+              </div>
+              <div class="auth__content-item is-active" data-tabs="registration">
+                <form action="#" class="auth__form form">
+                  <div class="form__text">
+                    Заполните поля для того, чтобы зарегистрироваться
+                  </div>
+                  <label class="form__item">
+                    <input
+                      type="email"
+                      class="form__input form__input--email"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                  <label class="form__item">
+                    <input
+                      type="password"
+                      class="form__input form__input--password"
+                      placeholder="Пароль"
+                    />
+                  </label>
+                  <label class="form__item">
+                    <input
+                      type="password"
+                      class="form__input form__input--password"
+                      placeholder="Пароль еще раз"
+                    />
+                  </label>
+                  <label class="form__checkbox">
+                    <input type="checkbox" />
+                    <span class="form__checkbox-text"
+                      >Регистрируясь, я принимаю пользовательское соглашение,
+                      политику конфиденциальности и даю согласие на обработку
+                      персональных данных</span
+                    >
+                  </label>
+                  <div class="text-center">
+                    <button class="form__btn btn text-uppercase">
+                      регистрация
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="auth__img">
+            <img
+              width="705"
+              height="532"
+              src="img/auth.png"
+              alt="Авторизация и регистрация"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal modal-form" id="modal-password" aria-hidden="true">
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <div class="modal__content">
+            <div class="modal__title">Оставить заявку</div>
+            <div class="modal__text">Введите свой e-mail и мы вышлеминструкцию по восстановлению пароля</div>
+            <form class="modal__form form" action="#">
+              <label class="form__item">
+                <input
+                  type="email"
+                  class="form__input form__input--email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <div class="text-center">
+                <button class="modal__btn btn text-uppercase">отправить</button>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close" data-modal-close></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
