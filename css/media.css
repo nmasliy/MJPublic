@@ -753,4 +753,7 @@
 	.earn__item-title>div {
 		font-size: 18px;
 	}
+	.modal__btn  {
+		width: 100%;
+	}
 }

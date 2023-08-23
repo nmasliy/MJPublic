@@ -571,6 +571,7 @@ body {
 }
 .partner-program__slider .noUi-connects {
   border-radius: 16px;
+	overflow: visible;
 }
 .partner-program__slider .noUi-connect {
   border-radius: 16px;
