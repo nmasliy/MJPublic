@@ -524,6 +524,23 @@
 	.registration {
 		padding: 45px 0 95px;
 	}
+	.auth {
+		padding-top: 120px;
+		background: transparent;
+	}
+	.auth__inner {
+		display: block;
+	}
+	.auth__img {
+		display: none;
+	}
+	.auth__tab {
+		font-size: 16px;
+		padding: 20px 2px;
+	}
+	.modal__inner {
+		padding: 40px 15px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -705,6 +722,12 @@
 
 	.btn {
 		font-size: 14px;
+	}
+	.form {
+		padding: 0;
+	}
+	.form__btn {
+		width: 100%;
 	}
 
 	.hero {
