@@ -542,7 +542,7 @@ body {
 .partner-program__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1024px;
+  max-width: 1124px;
   width: 100%;
   margin: 0 auto;
   gap: 140px;
@@ -569,8 +569,13 @@ body {
   overflow: hidden;
   background-color: #fcfcfc;
 }
+.partner-program__slider .noUi-connect,
+.partner-program__slider .noUi-origin {
+  right: 1px;
+}
 .partner-program__slider .noUi-connects {
   border-radius: 16px;
+  width: calc(100% + 3px);
 	overflow: visible;
 }
 .partner-program__slider .noUi-connect {
@@ -581,6 +586,9 @@ body {
 .partner-program__slider .noUi-handle:before {
   display: none;
 }
+.partner-program__slider * {
+  box-sizing: border-box;
+}
 .partner-program__slider .noUi-handle {
   width: 28px;
   height: 28px;
@@ -590,7 +598,7 @@ body {
   background-color: #c6a5f2;
   border: 2px solid #fff;
   top: 4px;
-  right: 10px;
+  right: 8px;
 }
 .partner-program__slider-caption {
   color: var(--bg, #a0a0a0);
@@ -817,7 +825,7 @@ body {
     url("../img/auth-bg-bottom-right.svg") bottom right no-repeat,
     url("../img/auth-bg-top-right.svg") top right no-repeat,
     url("../img/auth-bg-bottom-left.svg") bottom 40px left no-repeat;
-  padding: 230px 0;
+  padding: 170px 0;
   flex-grow: 1;
 }
 .auth__inner {
@@ -908,6 +916,9 @@ body {
 .form__input--password {
   background: url("../img/lock-icon.svg") left 24px center no-repeat;
 }
+.form__input--nickname {
+  background: url("../img/nick-icon.svg") left 24px center no-repeat;
+}
 .form__checkbox {
   display: flex;
   align-items: center;
@@ -925,10 +936,16 @@ body {
   font-size: 14px;
   letter-spacing: -0.42px;
 }
+.form__checkbox a:hover {
+  text-decoration: underline;
+}
 .form__btn {
 	padding-left: 80px;
 	padding-right: 80px;
 }
 .form__btn--offset {
   margin-top: 15px;
+}
+.modal-success .modal__inner {
+  max-width: 400px;
 }

@@ -1,1403 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MJPublic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/aos.css" rel="stylesheet" />
-    <link href="css/libs.css" rel="stylesheet" />
-    <link href="css/nouislider.min.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/media.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="./" class="header__logo">
-            <img src="img/logo.png" alt="MJPublic logo" />
-            <span>MJPublic</span>
-          </a>
-          <div class="header__menu">
-            <nav class="header__nav">
-              <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#start">С чего начать</a></li>
-                <li><a href="#benefits">Наши преимущества</a></li>
-                <li><a href="#earn">Заработок в интернете</a></li>
-              </ul>
-            </nav>
-            <div class="header__buttons">
-              <a
-                href="./registration.html#login"
-                class="header__btn header__btn--login"
-              >
-                Вход
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.75 4.25C14.75 4.05109 14.829 3.86032 14.9697 3.71967C15.1103 3.57902 15.3011 3.5 15.5 3.5H19C19.966 3.5 20.75 4.284 20.75 5.25V19.25C20.75 19.7141 20.5656 20.1592 20.2374 20.4874C19.9092 20.8156 19.4641 21 19 21H15.5C15.3011 21 15.1103 20.921 14.9697 20.7803C14.829 20.6397 14.75 20.4489 14.75 20.25C14.75 20.0511 14.829 19.8603 14.9697 19.7197C15.1103 19.579 15.3011 19.5 15.5 19.5H19C19.0663 19.5 19.1299 19.4737 19.1768 19.4268C19.2237 19.3799 19.25 19.3163 19.25 19.25V5.25C19.25 5.1837 19.2237 5.12011 19.1768 5.07322C19.1299 5.02634 19.0663 5 19 5H15.5C15.3011 5 15.1103 4.92098 14.9697 4.78033C14.829 4.63968 14.75 4.44891 14.75 4.25ZM2.75 12.25C2.75 12.0511 2.82902 11.8603 2.96967 11.7197C3.11032 11.579 3.30109 11.5 3.5 11.5H13.19L9.97 8.28C9.83752 8.13782 9.7654 7.94978 9.76882 7.75548C9.77225 7.56118 9.85097 7.37579 9.98838 7.23838C10.1258 7.10097 10.3112 7.02225 10.5055 7.01883C10.6998 7.0154 10.8878 7.08752 11.03 7.22L15.53 11.72C15.6705 11.8606 15.7493 12.0512 15.7493 12.25C15.7493 12.4488 15.6705 12.6394 15.53 12.78L11.03 17.28C10.9613 17.3537 10.8785 17.4128 10.7865 17.4538C10.6945 17.4948 10.5952 17.5168 10.4945 17.5186C10.3938 17.5204 10.2938 17.5018 10.2004 17.4641C10.107 17.4264 10.0222 17.3703 9.95096 17.299C9.87974 17.2278 9.8236 17.143 9.78588 17.0496C9.74816 16.9562 9.72963 16.8562 9.73141 16.7555C9.73318 16.6548 9.75523 16.5555 9.79622 16.4635C9.83721 16.3715 9.89631 16.2887 9.97 16.22L13.19 13H3.5C3.30109 13 3.11032 12.921 2.96967 12.7803C2.82902 12.6397 2.75 12.4489 2.75 12.25Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a href="./registration.html" class="header__btn">Регистрация</a>
-            </div>
-          </div>
-          <button class="burger"><span></span></button>
-        </div>
-      </div>
-      <div class="header__overlay"></div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MJPublic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="css/aos.css" rel="stylesheet" />
+  <link href="css/libs.css" rel="stylesheet" />
+  <link href="css/nouislider.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/media.css" rel="stylesheet" />
+</head>
 
-    <div class="main-content">
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <div class="tabs-content-item" data-tabs="performer">
-                <div class="hero__info hero__info--1">
-                  <h1 class="hero__title title">
-                    Простые задания, большие возможности!
-                  </h1>
-                  <p class="hero__text">
-                    Эффективный заработок на легких заданиях. <br> Присоединяйтесь к нам и начните зарабатывать на своем времени!
-                  </p>
-                </div>
-              </div>
-              <div class="tabs-content-item is-active" data-tabs="customer">
-                <div class="hero__info hero__info--2">
-                  <h1 class="hero__title title">
-                    Ведущая платформа крауд-маркетинга и социального продвижения
-                  </h1>
-                  <p class="hero__text">
-                    Предоставление авторов и качественное выполнение - наша
-                    главная цель в достижении ваших целей по продвижению.
-                  </p>
-                </div>
-              </div>
-              <ul class="hero__tabs">
-                <li
-                  class="hero__tab"
-                  role="button"
-                  tabindex="0"
-                  data-tabs="performer"
-                >
-                  <span>Для исполнителей</span>
-                </li>
-                <li
-                  class="hero__tab is-active"
-                  role="button"
-                  tabindex="0"
-                  data-tabs="customer"
-                >
-                  <span>Для заказчиков</span>
-                </li>
-              </ul>
-              <a href="./registration.html" class="hero__btn btn"
-                >Начать сотрудничество
-              </a>
-            </div>
-            <div class="tabs-content-item" data-tabs="performer">
-              <div class="hero__img hero__img--1">
-                <img src="img/hero-2.png" width="648" height="518" alt="hero" />
-              </div>
-            </div>
-            <div class="tabs-content-item is-active" data-tabs="customer">
-              <div class="hero__img hero__img--2">
-                <img src="img/hero.png" width="648" height="518" alt="hero" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about__inner">
-            <div class="about__img" data-aos="fade-up">
-              <img src="img/about.png" width="526" height="514" alt="о нас" />
-            </div>
-            <div class="tabs-content-item" data-tabs="performer">
-              <div class="about__content" data-aos="fade-up">
-                <h2 class="about__title title">О нас в цифрах</h2>
-                <div class="about__text">
-                  <p>
-                    Тысячи заказчиков объединены на нашей бирже. Ежедневно они выкладывают сотни высокооплачиваемых заданий, а общее число выплаченной исполнителям суммы достигло внушительного числа. Это подчеркивает надежность, активность и доверие со стороны наших заказчиков.
-                  </p>
-                </div>
-                <div class="about__items" data-aos="fade-up">
-                  <div class="about__item about__item--1">
-                    <div class="about__name">Заказчиков</div>
-                    <div class="about__num">150 345</div>
-                  </div>
-                  <div class="about__item about__item--2">
-                    <div class="about__name">Активных <br> заданий</div>
-                    <div class="about__num">150 345</div>
-                    <div class="about__icon about__icon--1">
-                      <svg
-                        class="about__icon-line"
-                        width="301"
-                        height="107"
-                        viewBox="0 0 301 107"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M300 30.6577C300 30.6577 213.928 1.00605 120.686 36.2815C27.4448 71.5569 2 106 2 106"
-                          class="about__icon-path"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <svg
-                        class="about__icon-line about__icon-line--mobile"
-                        width="48"
-                        height="232"
-                        viewBox="0 0 48 232"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          class="about__icon-path"
-                          d="M46.3711 1C-12.5509 91.4259 -5.09009 143.473 24.3711 231.5"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <img
-                        width="69"
-                        height="69"
-                        src="img/about-icon-2.svg"
-                        alt="Иконка Активных заданий"
-                        class="about__icon-img"
-                      />
-                    </div>
-                  </div>
-                  <div class="about__item about__item--3">
-                    <div class="about__name">Выплачено <br> денег</div>
-                    <div class="about__num">150 345</div>
-                    <div class="about__icon about__icon--2">
-                      <svg
-                        class="about__icon-line"
-                        width="291"
-                        height="112"
-                        viewBox="0 0 291 112"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M290 73.7443C290 73.7443 206.816 102.373 116.703 68.3144C26.591 34.2554 2 0.999996 2 0.999996"
-                          class="about__icon-path"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <svg
-                        class="about__icon-line about__icon-line--mobile"
-                        width="48"
-                        height="232"
-                        viewBox="0 0 48 232"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          class="about__icon-path"
-                          d="M2 1C60.922 91.4259 53.4612 143.473 24 231.5"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <img
-                        width="69"
-                        height="69"
-                        src="img/about-icon-2-2.svg"
-                        alt="Иконка Выплачено денег"
-                        class="about__icon-img"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tabs-content-item is-active" data-tabs="customer">
-              <div class="about__content" data-aos="fade-up">
-                <h2 class="about__title title">О нас в цифрах</h2>
-                <div class="about__text">
-                  <p>
-                    Тысячи креативных профессионалов объединены на нашей бирже. Ежедневно они успешно выполняют сотни заданий, а общее число завершенных проектов достигло впечатляющей цифры. Это подчеркивает нашу надежность, активность и доверие со стороны наших пользователей.
-                  </p>
-                </div>
-                <div class="about__items" data-aos="fade-up">
-                  <div class="about__item about__item--1">
-                    <div class="about__name">Исполнителей</div>
-                    <div class="about__num">150 345</div>
-                  </div>
-                  <div class="about__item about__item--2">
-                    <div class="about__name">Выполнений в сутки</div>
-                    <div class="about__num">150 345</div>
-                    <div class="about__icon about__icon--1">
-                      <svg
-                        class="about__icon-line"
-                        width="301"
-                        height="107"
-                        viewBox="0 0 301 107"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M300 30.6577C300 30.6577 213.928 1.00605 120.686 36.2815C27.4448 71.5569 2 106 2 106"
-                          class="about__icon-path"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <svg
-                        class="about__icon-line about__icon-line--mobile"
-                        width="48"
-                        height="232"
-                        viewBox="0 0 48 232"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          class="about__icon-path"
-                          d="M46.3711 1C-12.5509 91.4259 -5.09009 143.473 24.3711 231.5"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <img
-                        width="69"
-                        height="69"
-                        src="img/about-icon-1.svg"
-                        alt="Иконка Выполнений в сутки"
-                        class="about__icon-img"
-                      />
-                    </div>
-                  </div>
-                  <div class="about__item about__item--3">
-                    <div class="about__name">Выполненных заданий</div>
-                    <div class="about__num">150 345</div>
-                    <div class="about__icon about__icon--2">
-                      <svg
-                        class="about__icon-line"
-                        width="291"
-                        height="112"
-                        viewBox="0 0 291 112"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M290 73.7443C290 73.7443 206.816 102.373 116.703 68.3144C26.591 34.2554 2 0.999996 2 0.999996"
-                          class="about__icon-path"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <svg
-                        class="about__icon-line about__icon-line--mobile"
-                        width="48"
-                        height="232"
-                        viewBox="0 0 48 232"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          class="about__icon-path"
-                          d="M2 1C60.922 91.4259 53.4612 143.473 24 231.5"
-                          stroke="#A371E0"
-                          stroke-width="3"
-                          stroke-linejoin="round"
-                          stroke-dasharray="10 10"
-                        />
-                      </svg>
-                      <img
-                        width="69"
-                        height="69"
-                        src="img/about-icon-2.svg"
-                        alt="Иконка Выполненных заданий"
-                        class="about__icon-img"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="start" id="start">
-        <div class="container">
-          <div class="tabs-content-item" data-tabs="performer">
-            <div class="start__inner">
-              <h2 class="start__title title text-center" data-aos="fade-up">
-                С чего начать
-              </h2>
-              <ul class="start__list">
-                <li class="start__item" data-aos="fade-up">
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-1.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Регистрируйтесь
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Регистрируйтесь, заполняйте анкету и получайте персонализированные для вас задания, чтобы сделать процесс работы удобнее.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-1.png"
-                      width="495"
-                      height="398"
-                      alt="Регистрируйтесь"
-                    />
-                  </div>
-                </li>
-                <li class="start__item" data-aos="fade-up" >
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-2-2.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Размещайте задания
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Выбирайте понравившиеся задания и получайте честно заработанные деньги сразу же после проверки задания!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-2.png"
-                      width="495"
-                      height="398"
-                      alt="Размещайте задания"
-                    />
-                  </div>
-                </li>
-                <li class="start__item" data-aos="fade-up" >
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-3.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Приглашайте друзей
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Организуйте стабильный пассивный доход, приглашая людей на платформу и получая до 50% с каждого их выполнения заданий.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-3.png"
-                      width="495"
-                      height="398"
-                      alt="Приглашайте друзей"
-                    />
-                  </div>
-                </li>
-                <li class="start__item" data-aos="fade-up" >
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-4.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Получайте результат
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Используйте все возможности платформы для достижения максимального результата, не тратя много времени!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-4.png"
-                      width="495"
-                      height="398"
-                      alt="Получайте результат"
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs-content-item is-active" data-tabs="customer">
-            <div class="start__inner">
-              <h2 class="start__title title text-center" data-aos="fade-up">
-                С чего начать
-              </h2>
-              <ul class="start__list">
-                <li class="start__item" data-aos="fade-up">
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-1.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Регистрируйтесь
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Регистрируйтесь, заполняйте анкету и начните ознакомление с процессом создания заданий через нашу видео-инструкцию.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-1.png"
-                      width="495"
-                      height="398"
-                      alt="Регистрируйтесь"
-                    />
-                  </div>
-                </li>
-                <li class="start__item" data-aos="fade-up" >
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-2.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Размещайте задания
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Широкий спектр настроек, оформления и таргетирования задания позволят вашему заданию всегда находить нужных исполнителей.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-2.png"
-                      width="495"
-                      height="398"
-                      alt="Размещайте задания"
-                    />
-                  </div>
-                </li>
-                <li class="start__item" data-aos="fade-up" >
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-3.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Приглашайте друзей
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Организуйте стабильный пассивный доход, приглашая людей на платформу и получая до 50% с каждого их выполнения заданий.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-3.png"
-                      width="495"
-                      height="398"
-                      alt="Приглашайте друзей"
-                    />
-                  </div>
-                </li>
-                <li class="start__item" data-aos="fade-up" >
-                  <div class="start__box">
-                    <div class="start__heading">
-                      <img
-                        src="img/start-icon-4.svg"
-                        width="65"
-                        height="65"
-                        alt="иконка с чего начать"
-                      />
-                      Получайте результат
-                    </div>
-                    <div class="start__text">
-                      <p>
-                        Гибкая настройка заданий и тысячи надежных исполнителей - залог успеха каждого вашего проекта!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="start__img">
-                    <img
-                      src="img/start-4.png"
-                      width="495"
-                      height="398"
-                      alt="Получайте результат"
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="benefits" id="benefits">
-        <div class="container">
-          <div class="benefits__inner">
-            <h3 class="benefits__title title text-center" data-aos="fade-up">
-              наши преимущества
-            </h3>
-            <div class="tabs-content-item" data-tabs="performer">
-              <ol class="benefits__list">
-                <li class="benefits__item" data-aos="fade-up">
-                  <div class="benefits__icon">
-                    <img
-                      src="img/benefits-1-2.png"
-                      width="210"
-                      height="210"
-                      alt="иконка преимущества"
-                    />
-                  </div>
-                  <div class="benefits__name">Заработок на простых <br> заданиях</div>
-                  <div class="benefits__text">
-                    Большой выбор простых заданий, даст&nbsp;стабильный прирост к вашему дохору.
-                  </div>
-                </li>
-                <li
-                  class="benefits__item"
-                  data-aos="fade-up"
-                  data-aos-delay="50"
-                >
-                  <div class="benefits__icon">
-                    <img
-                      src="img/benefits-2-2.png"
-                      width="210"
-                      height="210"
-                      alt="иконка преимущества"
-                    />
-                  </div>
-                  <div class="benefits__name">
-                    Быстрый и удобный <br> вывод
-                  </div>
-                  <div class="benefits__text">
-                    Минимальная сумма для выплаты - 100&nbsp;руб. Вывод на все популярные системы.
-                  </div>
-                </li>
-                <li
-                  class="benefits__item"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div class="benefits__icon">
-                    <img
-                      src="img/benefits-3-2.png"
-                      width="210"
-                      height="210"
-                      alt="иконка преимущества"
-                    />
-                  </div>
-                  <div class="benefits__name">Реферальная <br> программа</div>
-                  <div class="benefits__text">
-                    Нет времени на задания? <br> Приглашайте друзей и получайте до 50% с выполненных ими заданий!
-                  </div>
-                </li>
-              </ol>
-            </div>
-            <div class="tabs-content-item is-active" data-tabs="customer">
-              <ol class="benefits__list">
-                <li class="benefits__item" data-aos="fade-up">
-                  <div class="benefits__icon">
-                    <img
-                      src="img/benefits-1.png"
-                      width="210"
-                      height="210"
-                      alt="иконка преимущества"
-                    />
-                  </div>
-                  <div class="benefits__name">Гарантия качества <br> выполнения</div>
-                  <div class="benefits__text">
-                    Оплата работы только после вашего подтверждения
-                  </div>
-                </li>
-                <li
-                  class="benefits__item"
-                  data-aos="fade-up"
-                  data-aos-delay="50"
-                >
-                  <div class="benefits__icon">
-                    <img
-                      src="img/benefits-2.png"
-                      width="210"
-                      height="210"
-                      alt="иконка преимущества"
-                    />
-                  </div>
-                  <div class="benefits__name">
-                    Распределение выполнений <br> по времени
-                  </div>
-                  <div class="benefits__text">
-                    Создавайте удобное рассписание для выполнений ваших заданий
-                  </div>
-                </li>
-                <li
-                  class="benefits__item"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div class="benefits__icon">
-                    <img
-                      src="img/benefits-3.png"
-                      width="210"
-                      height="210"
-                      alt="иконка преимущества"
-                    />
-                  </div>
-                  <div class="benefits__name">Выгодные цены <br> и бонусы</div>
-                  <div class="benefits__text">
-                    Приятные скидки при оптовом продвижении заданий и широкая бонусная система.
-                  </div>
-                </li>
-              </ol>
-            </div>
-            <div
-              class="benefits__program partner-program"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              id="partner-program"
-            >
-              <h4 class="partner-program__title">партнерская программа</h4>
-              <div class="partner-program__text">
-                Наш калькулятор поможет оценить приблизительный заработок на&nbsp;основе реферальной программы.
-              </div>
-              <div class="partner-program__row">
-                <div class="partner-program__col">
-                  <div class="partner-program__slider-value">
-                    <span>100.000</span> руб.
-                  </div>
-                  <div
-                    id="partner-program-slider"
-                    class="partner-program__slider"
-                  ></div>
-                  <div class="partner-program__slider-caption">
-                    выполнений рефералом
-                  </div>
-                </div>
-                <div class="partner-program__col">
-                  <div class="partner-program__reward-title">
-                    ваше вознаграждение
-                  </div>
-                  <div class="partner-program__reward-value">
-                    <span>50.000</span> руб.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="earn" data-aos="fade-up" id="earn">
-        <div class="container">
-          <div class="earn__inner">
-            <h3 class="earn__title title text-center">Заработок в интернете</h3>
-            <div class="tabs-content-item earn__tabs-1" data-tabs="performer">
-              <div class="earn__tabs-wrapper">
-                <ul class="earn__tabs">
-                  <li class="earn__tab" data-tabs="1">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.9805 7.8125V42.1875H16.668C17.0824 42.1875 17.4798 42.3521 17.7728 42.6451C18.0658 42.9382 18.2305 43.3356 18.2305 43.75C18.2305 44.1644 18.0658 44.5618 17.7728 44.8549C17.4798 45.1479 17.0824 45.3125 16.668 45.3125H11.4596C10.0221 45.3125 8.85547 44.1458 8.85547 42.7083V7.29167C8.85547 5.85417 10.0221 4.6875 11.4596 4.6875H38.543C39.9805 4.6875 41.1471 5.85417 41.1471 7.29167V27.0833C41.1471 27.4977 40.9825 27.8952 40.6895 28.1882C40.3965 28.4812 39.999 28.6458 39.5846 28.6458C39.1702 28.6458 38.7728 28.4812 38.4798 28.1882C38.1868 27.8952 38.0221 27.4977 38.0221 27.0833V7.8125H11.9805ZM23.3742 13.4375C23.6229 13.106 23.7296 12.6893 23.671 12.279C23.6124 11.8688 23.3932 11.4986 23.0617 11.25C22.7302 11.0014 22.3135 10.8946 21.9032 10.9532C21.493 11.0118 21.1229 11.231 20.8742 11.5625L18.8305 14.2875L18.0201 13.4792C17.7239 13.2032 17.3321 13.0529 16.9273 13.0601C16.5225 13.0672 16.1363 13.2312 15.85 13.5175C15.5637 13.8037 15.3997 14.19 15.3926 14.5947C15.3855 14.9995 15.5357 15.3913 15.8117 15.6875L17.8951 17.7708C18.0533 17.929 18.2437 18.0514 18.4533 18.1297C18.6629 18.208 18.8869 18.2403 19.1102 18.2245C19.3334 18.2087 19.5506 18.1451 19.7471 18.0381C19.9436 17.9311 20.1148 17.7831 20.2492 17.6042L23.3742 13.4375ZM27.3326 13.0208C26.9182 13.0208 26.5207 13.1855 26.2277 13.4785C25.9347 13.7715 25.7701 14.1689 25.7701 14.5833C25.7701 14.9977 25.9347 15.3952 26.2277 15.6882C26.5207 15.9812 26.9182 16.1458 27.3326 16.1458H32.5409C32.9553 16.1458 33.3527 15.9812 33.6457 15.6882C33.9388 15.3952 34.1034 14.9977 34.1034 14.5833C34.1034 14.1689 33.9388 13.7715 33.6457 13.4785C33.3527 13.1855 32.9553 13.0208 32.5409 13.0208H27.3326ZM26.7784 25.5167C26.7784 25.2415 26.8877 24.9776 27.0823 24.783C27.2768 24.5885 27.5407 24.4792 27.8159 24.4792C28.091 24.4792 28.3549 24.5885 28.5495 24.783C28.7441 24.9776 28.8534 25.2415 28.8534 25.5167V31.15C28.8531 31.5114 28.9782 31.8618 29.2072 32.1414C29.4363 32.421 29.7552 32.6125 30.1096 32.6833L35.968 33.8542C37.443 34.15 38.3451 35.6521 37.9138 37.0937L36.4596 41.9375H25.0784L20.4534 35C20.3407 34.8284 20.2957 34.6212 20.327 34.4184C20.3583 34.2155 20.4638 34.0315 20.6229 33.9019C20.7821 33.7723 20.9836 33.7064 21.1886 33.7168C21.3935 33.7272 21.5874 33.8133 21.7326 33.9583L24.1034 36.3625C24.321 36.5831 24.5992 36.7341 24.9028 36.7961C25.2063 36.8582 25.5215 36.8287 25.8082 36.7112C26.0949 36.5938 26.3402 36.3937 26.513 36.1365C26.6857 35.8793 26.7781 35.5765 26.7784 35.2667V25.5167ZM27.8159 21.3542C26.7119 21.3542 25.6532 21.7927 24.8726 22.5733C24.0919 23.354 23.6534 24.4127 23.6534 25.5167V31.4896C22.9209 30.8896 21.9975 30.5724 21.0509 30.5956C20.1044 30.6188 19.1976 30.9809 18.4954 31.616C17.7932 32.2511 17.3422 33.1171 17.2244 34.0566C17.1066 34.996 17.3298 35.9466 17.8534 36.7354L22.9409 44.3688C23.0836 44.5828 23.2769 44.7583 23.5036 44.8797C23.7304 45.001 23.9837 45.0646 24.2409 45.0646H37.6221C37.9582 45.0643 38.2852 44.9558 38.5546 44.755C38.8241 44.5542 39.0216 44.2719 39.118 43.95L40.9055 37.9917C41.1329 37.2342 41.1997 36.4376 41.1014 35.6529C41.0032 34.8682 40.7421 34.1126 40.335 33.4346C39.9278 32.7566 39.3835 32.1711 38.737 31.7156C38.0905 31.2602 37.356 30.9447 36.5805 30.7896L31.9784 29.8708V25.5167C31.9784 24.4127 31.5398 23.354 30.7592 22.5733C29.9786 21.7927 28.9199 21.3542 27.8159 21.3542Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Произвольные задания
-                  </li>
-                  <li class="earn__tab" data-tabs="2">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M14.0625 10.4167C14.0625 8.97917 15.2292 7.8125 16.6667 7.8125H33.3333C34.7708 7.8125 35.9375 8.97917 35.9375 10.4167V27.7187C35.9375 28.1332 36.1021 28.5306 36.3951 28.8236C36.6882 29.1166 37.0856 29.2812 37.5 29.2812C37.9144 29.2812 38.3118 29.1166 38.6049 28.8236C38.8979 28.5306 39.0625 28.1332 39.0625 27.7187V10.4167C39.0625 8.8972 38.4589 7.43996 37.3845 6.36553C36.31 5.29111 34.8528 4.6875 33.3333 4.6875H16.6667C15.1472 4.6875 13.69 5.29111 12.6155 6.36553C11.5411 7.43996 10.9375 8.8972 10.9375 10.4167V39.5833C10.9375 41.1028 11.5411 42.56 12.6155 43.6345C13.69 44.7089 15.1472 45.3125 16.6667 45.3125C17.0811 45.3125 17.4785 45.1479 17.7715 44.8549C18.0645 44.5618 18.2292 44.1644 18.2292 43.75C18.2292 43.3356 18.0645 42.9382 17.7715 42.6451C17.4785 42.3521 17.0811 42.1875 16.6667 42.1875C15.2292 42.1875 14.0625 41.0208 14.0625 39.5833V10.4167ZM22.3958 11.4583C22.3958 11.0439 22.5605 10.6465 22.8535 10.3535C23.1465 10.0605 23.5439 9.89583 23.9583 9.89583H26.0417C26.4561 9.89583 26.8535 10.0605 27.1465 10.3535C27.4395 10.6465 27.6042 11.0439 27.6042 11.4583C27.6042 11.8727 27.4395 12.2702 27.1465 12.5632C26.8535 12.8562 26.4561 13.0208 26.0417 13.0208H23.9583C23.5439 13.0208 23.1465 12.8562 22.8535 12.5632C22.5605 12.2702 22.3958 11.8727 22.3958 11.4583ZM26.5354 24.4792C26.252 24.4792 25.9801 24.5918 25.7797 24.7922C25.5793 24.9926 25.4667 25.2645 25.4667 25.5479V35.4167C25.4668 35.7267 25.3747 36.0297 25.2021 36.2873C25.0296 36.5448 24.7842 36.7452 24.4974 36.8629C24.2106 36.9806 23.8953 37.0104 23.5915 36.9483C23.2878 36.8863 23.0094 36.7353 22.7917 36.5146L20.3896 34.0812C20.2404 33.9277 20.0391 33.8355 19.8253 33.8231C19.6115 33.8106 19.4008 33.8787 19.2348 34.0139C19.0688 34.1491 18.9594 34.3416 18.9283 34.5534C18.8971 34.7653 18.9465 34.9811 19.0667 35.1583L23.7542 42.1875H35.2958L36.7708 37.2708C36.8751 36.9235 36.9056 36.5583 36.8605 36.1985C36.8154 35.8387 36.6957 35.4923 36.509 35.1814C36.3223 34.8706 36.0727 34.6022 35.7763 34.3933C35.4798 34.1845 35.1431 34.0399 34.7875 33.9687L28.8604 32.7812C28.5063 32.7105 28.1877 32.5193 27.9587 32.2401C27.7297 31.9609 27.6044 31.6111 27.6042 31.25V25.5479C27.6042 25.2645 27.4916 24.9926 27.2911 24.7922C27.0907 24.5918 26.8189 24.4792 26.5354 24.4792ZM22.3417 25.5479C22.3417 24.4357 22.7835 23.369 23.57 22.5825C24.3565 21.796 25.4232 21.3542 26.5354 21.3542C27.6477 21.3542 28.7144 21.796 29.5008 22.5825C30.2873 23.369 30.7292 24.4357 30.7292 25.5479V29.9687L35.4 30.9042C36.1821 31.0606 36.9229 31.3786 37.5751 31.8378C38.2272 32.297 38.7763 32.8873 39.1871 33.5709C39.598 34.2546 39.8616 35.0165 39.961 35.8078C40.0604 36.5992 39.9935 37.4026 39.7646 38.1667L37.9542 44.1979C37.8578 44.5198 37.6603 44.8021 37.3908 45.0029C37.1214 45.2037 36.7944 45.3123 36.4583 45.3125H22.9167C22.6594 45.3125 22.4062 45.249 22.1794 45.1276C21.9526 45.0062 21.7593 44.8307 21.6167 44.6167L16.4667 36.8917C15.9328 36.0943 15.7049 35.1309 15.8248 34.1788C15.9448 33.2268 16.4047 32.3501 17.1197 31.7101C17.8347 31.0701 18.7568 30.7099 19.7163 30.6958C20.6758 30.6817 21.6081 31.0147 22.3417 31.6333V25.55V25.5479Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Оценка приложений
-                  </li>
-                  <li class="earn__tab is-active" data-tabs="3">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M23.5138 23.923C23.5283 23.6809 23.5989 23.4455 23.7201 23.2355L33.0951 6.99587C33.8602 5.69073 35.1105 4.74121 36.5731 4.35451C38.0358 3.96781 39.592 4.17534 40.9022 4.9318C42.2123 5.68826 43.1701 6.93224 43.5665 8.39227C43.9629 9.85231 43.7657 11.4099 43.018 12.725L33.643 28.9646C33.5216 29.174 33.3533 29.3523 33.1513 29.4855L25.3763 34.6209C25.1341 34.7808 24.8522 34.8702 24.5621 34.8789C24.2719 34.8876 23.9851 34.8154 23.7338 34.6702C23.4824 34.5251 23.2765 34.3128 23.139 34.0572C23.0015 33.8015 22.938 33.5127 22.9555 33.223L23.5138 23.923ZM26.6096 24.4771L26.2617 30.2896L31.1201 27.0834L37.4284 16.1605L32.918 13.5563L26.6096 24.4792V24.4771ZM40.3117 11.1646L38.9909 13.45L34.4805 10.8459L35.8013 8.55837C35.9711 8.25981 36.1982 7.99778 36.4696 7.78736C36.741 7.57694 37.0514 7.42229 37.3828 7.3323C37.7143 7.24232 38.0602 7.21878 38.4008 7.26305C38.7414 7.30732 39.0698 7.41851 39.3673 7.59024C39.6647 7.76196 39.9252 7.99082 40.1338 8.26363C40.3424 8.53645 40.495 8.84784 40.5828 9.17987C40.6706 9.51189 40.6918 9.85801 40.6453 10.1983C40.5988 10.5386 40.4854 10.8663 40.3117 11.1625V11.1646ZM26.043 9.89587H11.9805V42.1875H35.9388V32.2917C35.9388 31.8773 36.1034 31.4799 36.3964 31.1869C36.6895 30.8938 37.0869 30.7292 37.5013 30.7292C37.9157 30.7292 38.3131 30.8938 38.6062 31.1869C38.8992 31.4799 39.0638 31.8773 39.0638 32.2917V42.7084C39.0638 44.1459 37.8971 45.3125 36.4596 45.3125H11.4596C10.0221 45.3125 8.85547 44.1459 8.85547 42.7084V9.37504C8.85547 7.93754 10.0221 6.77087 11.4596 6.77087H26.043C26.4574 6.77087 26.8548 6.93549 27.1478 7.22852C27.4408 7.52154 27.6055 7.91897 27.6055 8.33337C27.6055 8.74777 27.4408 9.1452 27.1478 9.43823C26.8548 9.73125 26.4574 9.89587 26.043 9.89587Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Копирайтинг и Рерайтинг
-                  </li>
-                  <li class="earn__tab" data-tabs="4">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M18.75 7.8125C16.678 7.8125 14.6909 8.6356 13.2257 10.1007C11.7606 11.5659 10.9375 13.553 10.9375 15.625C10.9375 17.697 11.7606 19.6841 13.2257 21.1493C14.6909 22.6144 16.678 23.4375 18.75 23.4375C20.822 23.4375 22.8091 22.6144 24.2743 21.1493C25.7394 19.6841 26.5625 17.697 26.5625 15.625C26.5625 13.553 25.7394 11.5659 24.2743 10.1007C22.8091 8.6356 20.822 7.8125 18.75 7.8125ZM7.8125 15.625C7.8125 14.1887 8.09541 12.7664 8.64507 11.4394C9.19473 10.1124 10.0004 8.90666 11.016 7.89102C12.0317 6.87538 13.2374 6.06973 14.5644 5.52007C15.8914 4.97041 17.3137 4.6875 18.75 4.6875C20.1863 4.6875 21.6086 4.97041 22.9356 5.52007C24.2626 6.06973 25.4683 6.87538 26.484 7.89102C27.4996 8.90666 28.3053 10.1124 28.8549 11.4394C29.4046 12.7664 29.6875 14.1887 29.6875 15.625C29.6875 18.5258 28.5352 21.3078 26.484 23.359C24.4328 25.4102 21.6508 26.5625 18.75 26.5625C15.8492 26.5625 13.0672 25.4102 11.016 23.359C8.96484 21.3078 7.8125 18.5258 7.8125 15.625ZM18.75 32.8125C15.8492 32.8125 13.0672 33.9648 11.016 36.016C8.96484 38.0672 7.8125 40.8492 7.8125 43.75C7.8125 44.1644 7.64788 44.5618 7.35485 44.8549C7.06183 45.1479 6.6644 45.3125 6.25 45.3125C5.8356 45.3125 5.43817 45.1479 5.14515 44.8549C4.85212 44.5618 4.6875 44.1644 4.6875 43.75C4.6875 40.0204 6.16908 36.4435 8.80631 33.8063C11.4435 31.1691 15.0204 29.6875 18.75 29.6875C22.4796 29.6875 26.0565 31.1691 28.6937 33.8063C31.3309 36.4435 32.8125 40.0204 32.8125 43.75C32.8125 44.1644 32.6479 44.5618 32.3549 44.8549C32.0618 45.1479 31.6644 45.3125 31.25 45.3125C30.8356 45.3125 30.4382 45.1479 30.1451 44.8549C29.8521 44.5618 29.6875 44.1644 29.6875 43.75C29.6875 40.8492 28.5352 38.0672 26.484 36.016C24.4328 33.9648 21.6508 32.8125 18.75 32.8125ZM33.7792 10.2625C33.3819 10.1443 32.9539 10.1887 32.5894 10.386C32.2249 10.5833 31.9537 10.9173 31.8354 11.3146C31.7172 11.7119 31.7616 12.1398 31.9589 12.5044C32.1562 12.8689 32.4902 13.1401 32.8875 13.2583C34.2018 13.6561 35.3296 14.5123 36.066 15.6713C36.8024 16.8303 37.0983 18.2151 36.9 19.5738C36.7018 20.9325 36.0224 22.175 34.9855 23.0752C33.9487 23.9754 32.6231 24.4736 31.25 24.4792C30.8356 24.4792 30.4382 24.6438 30.1451 24.9368C29.8521 25.2298 29.6875 25.6273 29.6875 26.0417V28.125C29.6875 28.5394 29.8521 28.9368 30.1451 29.2299C30.4382 29.5229 30.8356 29.6875 31.25 29.6875C33.5983 29.6875 35.8504 30.6203 37.5108 32.2808C39.1713 33.9413 40.1042 36.1934 40.1042 38.5417C40.1042 38.9561 40.2688 39.3535 40.5618 39.6465C40.8548 39.9395 41.2523 40.1042 41.6667 40.1042C42.0811 40.1042 42.4785 39.9395 42.7715 39.6465C43.0646 39.3535 43.2292 38.9561 43.2292 38.5417C43.2292 35.9252 42.3727 33.3807 40.7904 31.2969C39.2081 29.2131 36.987 27.7047 34.4667 27.0021C36.1862 26.332 37.6535 25.1415 38.6634 23.5969C39.6734 22.0523 40.1756 20.2307 40.0998 18.3868C40.0241 16.5429 39.3742 14.7687 38.241 13.3121C37.1078 11.8555 35.5479 10.7893 33.7792 10.2625Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Социальные сети
-                  </li>
-                  <li class="earn__tab" data-tabs="5">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M18.7292 8.99167C14.8173 10.5307 11.6021 13.4451 9.6875 17.1875H17.4354C17.7342 14.4364 18.1673 11.7013 18.7292 8.99167ZM22.125 8.05208C21.4454 11.0671 20.9294 14.1167 20.5792 17.1875H29.4229C29.072 14.1167 28.5553 11.0671 27.875 8.05208C25.9717 7.73137 24.0282 7.73137 22.125 8.05208ZM17.1667 20.3125H8.45833C8.02813 21.8378 7.8108 23.4152 7.8125 25C7.8125 26.625 8.0375 28.1979 8.45833 29.6875H17.1667C16.9626 26.5658 16.9626 23.4342 17.1667 20.3125ZM20.2979 29.6875C20.0847 26.5661 20.0847 23.4339 20.2979 20.3125H29.7021C29.9167 23.4583 29.9167 26.5562 29.7021 29.6875H20.3H20.2979ZM17.4333 32.8125H9.6875C11.6025 36.5541 14.8177 39.4678 18.7292 41.0062C18.1658 38.2974 17.7333 35.563 17.4333 32.8125ZM22.125 41.9479C21.4445 38.9329 20.9278 35.8833 20.5771 32.8125H29.4229C29.0722 35.8833 28.5554 38.9329 27.875 41.9479C25.9717 42.2682 24.0283 42.2682 22.125 41.9479ZM32.8354 29.6875C33.0396 26.5583 33.0396 23.4583 32.8354 20.3125H41.5396C41.9625 21.8021 42.1875 23.375 42.1875 25C42.1891 26.5848 41.9718 28.1622 41.5417 29.6875H32.8354ZM31.2729 8.99375C35.1844 10.5322 38.3996 13.4459 40.3146 17.1875H32.5646C32.2657 14.4371 31.8346 11.7027 31.2729 8.99375ZM32.5646 32.8125H40.3146C38.3996 36.5541 35.1844 39.4678 31.2729 41.0062C31.8479 38.2062 32.2792 35.4896 32.5646 32.8125ZM4.6875 25C4.6875 13.7812 13.7812 4.6875 25 4.6875C36.2187 4.6875 45.3125 13.7812 45.3125 25C45.3125 36.2187 36.2187 45.3125 25 45.3125C13.7812 45.3125 4.6875 36.2187 4.6875 25Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Наполнение сайтов
-                  </li>
-                </ul>
-              </div>
-              <div class="earn__content">
-                <div class="earn__content-item" data-tabs="1">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      1Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-1.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item" data-tabs="2">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      2Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-2.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item is-active" data-tabs="3">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-3.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item" data-tabs="4">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      4Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-4.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item" data-tabs="5">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      5Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-5.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tabs-content-item is-active earn__tabs-2"
-              data-tabs="customer"
-            >
-              <div class="earn__tabs-wrapper">
-                <ul class="earn__tabs">
-                  <li class="earn__tab" data-tabs="1">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.9805 7.8125V42.1875H16.668C17.0824 42.1875 17.4798 42.3521 17.7728 42.6451C18.0658 42.9382 18.2305 43.3356 18.2305 43.75C18.2305 44.1644 18.0658 44.5618 17.7728 44.8549C17.4798 45.1479 17.0824 45.3125 16.668 45.3125H11.4596C10.0221 45.3125 8.85547 44.1458 8.85547 42.7083V7.29167C8.85547 5.85417 10.0221 4.6875 11.4596 4.6875H38.543C39.9805 4.6875 41.1471 5.85417 41.1471 7.29167V27.0833C41.1471 27.4977 40.9825 27.8952 40.6895 28.1882C40.3965 28.4812 39.999 28.6458 39.5846 28.6458C39.1702 28.6458 38.7728 28.4812 38.4798 28.1882C38.1868 27.8952 38.0221 27.4977 38.0221 27.0833V7.8125H11.9805ZM23.3742 13.4375C23.6229 13.106 23.7296 12.6893 23.671 12.279C23.6124 11.8688 23.3932 11.4986 23.0617 11.25C22.7302 11.0014 22.3135 10.8946 21.9032 10.9532C21.493 11.0118 21.1229 11.231 20.8742 11.5625L18.8305 14.2875L18.0201 13.4792C17.7239 13.2032 17.3321 13.0529 16.9273 13.0601C16.5225 13.0672 16.1363 13.2312 15.85 13.5175C15.5637 13.8037 15.3997 14.19 15.3926 14.5947C15.3855 14.9995 15.5357 15.3913 15.8117 15.6875L17.8951 17.7708C18.0533 17.929 18.2437 18.0514 18.4533 18.1297C18.6629 18.208 18.8869 18.2403 19.1102 18.2245C19.3334 18.2087 19.5506 18.1451 19.7471 18.0381C19.9436 17.9311 20.1148 17.7831 20.2492 17.6042L23.3742 13.4375ZM27.3326 13.0208C26.9182 13.0208 26.5207 13.1855 26.2277 13.4785C25.9347 13.7715 25.7701 14.1689 25.7701 14.5833C25.7701 14.9977 25.9347 15.3952 26.2277 15.6882C26.5207 15.9812 26.9182 16.1458 27.3326 16.1458H32.5409C32.9553 16.1458 33.3527 15.9812 33.6457 15.6882C33.9388 15.3952 34.1034 14.9977 34.1034 14.5833C34.1034 14.1689 33.9388 13.7715 33.6457 13.4785C33.3527 13.1855 32.9553 13.0208 32.5409 13.0208H27.3326ZM26.7784 25.5167C26.7784 25.2415 26.8877 24.9776 27.0823 24.783C27.2768 24.5885 27.5407 24.4792 27.8159 24.4792C28.091 24.4792 28.3549 24.5885 28.5495 24.783C28.7441 24.9776 28.8534 25.2415 28.8534 25.5167V31.15C28.8531 31.5114 28.9782 31.8618 29.2072 32.1414C29.4363 32.421 29.7552 32.6125 30.1096 32.6833L35.968 33.8542C37.443 34.15 38.3451 35.6521 37.9138 37.0937L36.4596 41.9375H25.0784L20.4534 35C20.3407 34.8284 20.2957 34.6212 20.327 34.4184C20.3583 34.2155 20.4638 34.0315 20.6229 33.9019C20.7821 33.7723 20.9836 33.7064 21.1886 33.7168C21.3935 33.7272 21.5874 33.8133 21.7326 33.9583L24.1034 36.3625C24.321 36.5831 24.5992 36.7341 24.9028 36.7961C25.2063 36.8582 25.5215 36.8287 25.8082 36.7112C26.0949 36.5938 26.3402 36.3937 26.513 36.1365C26.6857 35.8793 26.7781 35.5765 26.7784 35.2667V25.5167ZM27.8159 21.3542C26.7119 21.3542 25.6532 21.7927 24.8726 22.5733C24.0919 23.354 23.6534 24.4127 23.6534 25.5167V31.4896C22.9209 30.8896 21.9975 30.5724 21.0509 30.5956C20.1044 30.6188 19.1976 30.9809 18.4954 31.616C17.7932 32.2511 17.3422 33.1171 17.2244 34.0566C17.1066 34.996 17.3298 35.9466 17.8534 36.7354L22.9409 44.3688C23.0836 44.5828 23.2769 44.7583 23.5036 44.8797C23.7304 45.001 23.9837 45.0646 24.2409 45.0646H37.6221C37.9582 45.0643 38.2852 44.9558 38.5546 44.755C38.8241 44.5542 39.0216 44.2719 39.118 43.95L40.9055 37.9917C41.1329 37.2342 41.1997 36.4376 41.1014 35.6529C41.0032 34.8682 40.7421 34.1126 40.335 33.4346C39.9278 32.7566 39.3835 32.1711 38.737 31.7156C38.0905 31.2602 37.356 30.9447 36.5805 30.7896L31.9784 29.8708V25.5167C31.9784 24.4127 31.5398 23.354 30.7592 22.5733C29.9786 21.7927 28.9199 21.3542 27.8159 21.3542Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Произвольные задания
-                  </li>
-                  <li class="earn__tab" data-tabs="2">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M14.0625 10.4167C14.0625 8.97917 15.2292 7.8125 16.6667 7.8125H33.3333C34.7708 7.8125 35.9375 8.97917 35.9375 10.4167V27.7187C35.9375 28.1332 36.1021 28.5306 36.3951 28.8236C36.6882 29.1166 37.0856 29.2812 37.5 29.2812C37.9144 29.2812 38.3118 29.1166 38.6049 28.8236C38.8979 28.5306 39.0625 28.1332 39.0625 27.7187V10.4167C39.0625 8.8972 38.4589 7.43996 37.3845 6.36553C36.31 5.29111 34.8528 4.6875 33.3333 4.6875H16.6667C15.1472 4.6875 13.69 5.29111 12.6155 6.36553C11.5411 7.43996 10.9375 8.8972 10.9375 10.4167V39.5833C10.9375 41.1028 11.5411 42.56 12.6155 43.6345C13.69 44.7089 15.1472 45.3125 16.6667 45.3125C17.0811 45.3125 17.4785 45.1479 17.7715 44.8549C18.0645 44.5618 18.2292 44.1644 18.2292 43.75C18.2292 43.3356 18.0645 42.9382 17.7715 42.6451C17.4785 42.3521 17.0811 42.1875 16.6667 42.1875C15.2292 42.1875 14.0625 41.0208 14.0625 39.5833V10.4167ZM22.3958 11.4583C22.3958 11.0439 22.5605 10.6465 22.8535 10.3535C23.1465 10.0605 23.5439 9.89583 23.9583 9.89583H26.0417C26.4561 9.89583 26.8535 10.0605 27.1465 10.3535C27.4395 10.6465 27.6042 11.0439 27.6042 11.4583C27.6042 11.8727 27.4395 12.2702 27.1465 12.5632C26.8535 12.8562 26.4561 13.0208 26.0417 13.0208H23.9583C23.5439 13.0208 23.1465 12.8562 22.8535 12.5632C22.5605 12.2702 22.3958 11.8727 22.3958 11.4583ZM26.5354 24.4792C26.252 24.4792 25.9801 24.5918 25.7797 24.7922C25.5793 24.9926 25.4667 25.2645 25.4667 25.5479V35.4167C25.4668 35.7267 25.3747 36.0297 25.2021 36.2873C25.0296 36.5448 24.7842 36.7452 24.4974 36.8629C24.2106 36.9806 23.8953 37.0104 23.5915 36.9483C23.2878 36.8863 23.0094 36.7353 22.7917 36.5146L20.3896 34.0812C20.2404 33.9277 20.0391 33.8355 19.8253 33.8231C19.6115 33.8106 19.4008 33.8787 19.2348 34.0139C19.0688 34.1491 18.9594 34.3416 18.9283 34.5534C18.8971 34.7653 18.9465 34.9811 19.0667 35.1583L23.7542 42.1875H35.2958L36.7708 37.2708C36.8751 36.9235 36.9056 36.5583 36.8605 36.1985C36.8154 35.8387 36.6957 35.4923 36.509 35.1814C36.3223 34.8706 36.0727 34.6022 35.7763 34.3933C35.4798 34.1845 35.1431 34.0399 34.7875 33.9687L28.8604 32.7812C28.5063 32.7105 28.1877 32.5193 27.9587 32.2401C27.7297 31.9609 27.6044 31.6111 27.6042 31.25V25.5479C27.6042 25.2645 27.4916 24.9926 27.2911 24.7922C27.0907 24.5918 26.8189 24.4792 26.5354 24.4792ZM22.3417 25.5479C22.3417 24.4357 22.7835 23.369 23.57 22.5825C24.3565 21.796 25.4232 21.3542 26.5354 21.3542C27.6477 21.3542 28.7144 21.796 29.5008 22.5825C30.2873 23.369 30.7292 24.4357 30.7292 25.5479V29.9687L35.4 30.9042C36.1821 31.0606 36.9229 31.3786 37.5751 31.8378C38.2272 32.297 38.7763 32.8873 39.1871 33.5709C39.598 34.2546 39.8616 35.0165 39.961 35.8078C40.0604 36.5992 39.9935 37.4026 39.7646 38.1667L37.9542 44.1979C37.8578 44.5198 37.6603 44.8021 37.3908 45.0029C37.1214 45.2037 36.7944 45.3123 36.4583 45.3125H22.9167C22.6594 45.3125 22.4062 45.249 22.1794 45.1276C21.9526 45.0062 21.7593 44.8307 21.6167 44.6167L16.4667 36.8917C15.9328 36.0943 15.7049 35.1309 15.8248 34.1788C15.9448 33.2268 16.4047 32.3501 17.1197 31.7101C17.8347 31.0701 18.7568 30.7099 19.7163 30.6958C20.6758 30.6817 21.6081 31.0147 22.3417 31.6333V25.55V25.5479Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Оценка приложений
-                  </li>
-                  <li class="earn__tab is-active" data-tabs="3">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M23.5138 23.923C23.5283 23.6809 23.5989 23.4455 23.7201 23.2355L33.0951 6.99587C33.8602 5.69073 35.1105 4.74121 36.5731 4.35451C38.0358 3.96781 39.592 4.17534 40.9022 4.9318C42.2123 5.68826 43.1701 6.93224 43.5665 8.39227C43.9629 9.85231 43.7657 11.4099 43.018 12.725L33.643 28.9646C33.5216 29.174 33.3533 29.3523 33.1513 29.4855L25.3763 34.6209C25.1341 34.7808 24.8522 34.8702 24.5621 34.8789C24.2719 34.8876 23.9851 34.8154 23.7338 34.6702C23.4824 34.5251 23.2765 34.3128 23.139 34.0572C23.0015 33.8015 22.938 33.5127 22.9555 33.223L23.5138 23.923ZM26.6096 24.4771L26.2617 30.2896L31.1201 27.0834L37.4284 16.1605L32.918 13.5563L26.6096 24.4792V24.4771ZM40.3117 11.1646L38.9909 13.45L34.4805 10.8459L35.8013 8.55837C35.9711 8.25981 36.1982 7.99778 36.4696 7.78736C36.741 7.57694 37.0514 7.42229 37.3828 7.3323C37.7143 7.24232 38.0602 7.21878 38.4008 7.26305C38.7414 7.30732 39.0698 7.41851 39.3673 7.59024C39.6647 7.76196 39.9252 7.99082 40.1338 8.26363C40.3424 8.53645 40.495 8.84784 40.5828 9.17987C40.6706 9.51189 40.6918 9.85801 40.6453 10.1983C40.5988 10.5386 40.4854 10.8663 40.3117 11.1625V11.1646ZM26.043 9.89587H11.9805V42.1875H35.9388V32.2917C35.9388 31.8773 36.1034 31.4799 36.3964 31.1869C36.6895 30.8938 37.0869 30.7292 37.5013 30.7292C37.9157 30.7292 38.3131 30.8938 38.6062 31.1869C38.8992 31.4799 39.0638 31.8773 39.0638 32.2917V42.7084C39.0638 44.1459 37.8971 45.3125 36.4596 45.3125H11.4596C10.0221 45.3125 8.85547 44.1459 8.85547 42.7084V9.37504C8.85547 7.93754 10.0221 6.77087 11.4596 6.77087H26.043C26.4574 6.77087 26.8548 6.93549 27.1478 7.22852C27.4408 7.52154 27.6055 7.91897 27.6055 8.33337C27.6055 8.74777 27.4408 9.1452 27.1478 9.43823C26.8548 9.73125 26.4574 9.89587 26.043 9.89587Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Копирайтинг и Рерайтинг
-                  </li>
-                  <li class="earn__tab" data-tabs="4">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M18.75 7.8125C16.678 7.8125 14.6909 8.6356 13.2257 10.1007C11.7606 11.5659 10.9375 13.553 10.9375 15.625C10.9375 17.697 11.7606 19.6841 13.2257 21.1493C14.6909 22.6144 16.678 23.4375 18.75 23.4375C20.822 23.4375 22.8091 22.6144 24.2743 21.1493C25.7394 19.6841 26.5625 17.697 26.5625 15.625C26.5625 13.553 25.7394 11.5659 24.2743 10.1007C22.8091 8.6356 20.822 7.8125 18.75 7.8125ZM7.8125 15.625C7.8125 14.1887 8.09541 12.7664 8.64507 11.4394C9.19473 10.1124 10.0004 8.90666 11.016 7.89102C12.0317 6.87538 13.2374 6.06973 14.5644 5.52007C15.8914 4.97041 17.3137 4.6875 18.75 4.6875C20.1863 4.6875 21.6086 4.97041 22.9356 5.52007C24.2626 6.06973 25.4683 6.87538 26.484 7.89102C27.4996 8.90666 28.3053 10.1124 28.8549 11.4394C29.4046 12.7664 29.6875 14.1887 29.6875 15.625C29.6875 18.5258 28.5352 21.3078 26.484 23.359C24.4328 25.4102 21.6508 26.5625 18.75 26.5625C15.8492 26.5625 13.0672 25.4102 11.016 23.359C8.96484 21.3078 7.8125 18.5258 7.8125 15.625ZM18.75 32.8125C15.8492 32.8125 13.0672 33.9648 11.016 36.016C8.96484 38.0672 7.8125 40.8492 7.8125 43.75C7.8125 44.1644 7.64788 44.5618 7.35485 44.8549C7.06183 45.1479 6.6644 45.3125 6.25 45.3125C5.8356 45.3125 5.43817 45.1479 5.14515 44.8549C4.85212 44.5618 4.6875 44.1644 4.6875 43.75C4.6875 40.0204 6.16908 36.4435 8.80631 33.8063C11.4435 31.1691 15.0204 29.6875 18.75 29.6875C22.4796 29.6875 26.0565 31.1691 28.6937 33.8063C31.3309 36.4435 32.8125 40.0204 32.8125 43.75C32.8125 44.1644 32.6479 44.5618 32.3549 44.8549C32.0618 45.1479 31.6644 45.3125 31.25 45.3125C30.8356 45.3125 30.4382 45.1479 30.1451 44.8549C29.8521 44.5618 29.6875 44.1644 29.6875 43.75C29.6875 40.8492 28.5352 38.0672 26.484 36.016C24.4328 33.9648 21.6508 32.8125 18.75 32.8125ZM33.7792 10.2625C33.3819 10.1443 32.9539 10.1887 32.5894 10.386C32.2249 10.5833 31.9537 10.9173 31.8354 11.3146C31.7172 11.7119 31.7616 12.1398 31.9589 12.5044C32.1562 12.8689 32.4902 13.1401 32.8875 13.2583C34.2018 13.6561 35.3296 14.5123 36.066 15.6713C36.8024 16.8303 37.0983 18.2151 36.9 19.5738C36.7018 20.9325 36.0224 22.175 34.9855 23.0752C33.9487 23.9754 32.6231 24.4736 31.25 24.4792C30.8356 24.4792 30.4382 24.6438 30.1451 24.9368C29.8521 25.2298 29.6875 25.6273 29.6875 26.0417V28.125C29.6875 28.5394 29.8521 28.9368 30.1451 29.2299C30.4382 29.5229 30.8356 29.6875 31.25 29.6875C33.5983 29.6875 35.8504 30.6203 37.5108 32.2808C39.1713 33.9413 40.1042 36.1934 40.1042 38.5417C40.1042 38.9561 40.2688 39.3535 40.5618 39.6465C40.8548 39.9395 41.2523 40.1042 41.6667 40.1042C42.0811 40.1042 42.4785 39.9395 42.7715 39.6465C43.0646 39.3535 43.2292 38.9561 43.2292 38.5417C43.2292 35.9252 42.3727 33.3807 40.7904 31.2969C39.2081 29.2131 36.987 27.7047 34.4667 27.0021C36.1862 26.332 37.6535 25.1415 38.6634 23.5969C39.6734 22.0523 40.1756 20.2307 40.0998 18.3868C40.0241 16.5429 39.3742 14.7687 38.241 13.3121C37.1078 11.8555 35.5479 10.7893 33.7792 10.2625Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Социальные сети
-                  </li>
-                  <li class="earn__tab" data-tabs="5">
-                    <svg
-                      width="50"
-                      height="50"
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M18.7292 8.99167C14.8173 10.5307 11.6021 13.4451 9.6875 17.1875H17.4354C17.7342 14.4364 18.1673 11.7013 18.7292 8.99167ZM22.125 8.05208C21.4454 11.0671 20.9294 14.1167 20.5792 17.1875H29.4229C29.072 14.1167 28.5553 11.0671 27.875 8.05208C25.9717 7.73137 24.0282 7.73137 22.125 8.05208ZM17.1667 20.3125H8.45833C8.02813 21.8378 7.8108 23.4152 7.8125 25C7.8125 26.625 8.0375 28.1979 8.45833 29.6875H17.1667C16.9626 26.5658 16.9626 23.4342 17.1667 20.3125ZM20.2979 29.6875C20.0847 26.5661 20.0847 23.4339 20.2979 20.3125H29.7021C29.9167 23.4583 29.9167 26.5562 29.7021 29.6875H20.3H20.2979ZM17.4333 32.8125H9.6875C11.6025 36.5541 14.8177 39.4678 18.7292 41.0062C18.1658 38.2974 17.7333 35.563 17.4333 32.8125ZM22.125 41.9479C21.4445 38.9329 20.9278 35.8833 20.5771 32.8125H29.4229C29.0722 35.8833 28.5554 38.9329 27.875 41.9479C25.9717 42.2682 24.0283 42.2682 22.125 41.9479ZM32.8354 29.6875C33.0396 26.5583 33.0396 23.4583 32.8354 20.3125H41.5396C41.9625 21.8021 42.1875 23.375 42.1875 25C42.1891 26.5848 41.9718 28.1622 41.5417 29.6875H32.8354ZM31.2729 8.99375C35.1844 10.5322 38.3996 13.4459 40.3146 17.1875H32.5646C32.2657 14.4371 31.8346 11.7027 31.2729 8.99375ZM32.5646 32.8125H40.3146C38.3996 36.5541 35.1844 39.4678 31.2729 41.0062C31.8479 38.2062 32.2792 35.4896 32.5646 32.8125ZM4.6875 25C4.6875 13.7812 13.7812 4.6875 25 4.6875C36.2187 4.6875 45.3125 13.7812 45.3125 25C45.3125 36.2187 36.2187 45.3125 25 45.3125C13.7812 45.3125 4.6875 36.2187 4.6875 25Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Наполнение сайтов
-                  </li>
-                </ul>
-              </div>
-              <div class="earn__content">
-                <div class="earn__content-item" data-tabs="1">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      1Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-1.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item" data-tabs="2">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      2Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-2.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item is-active" data-tabs="3">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-3.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item" data-tabs="4">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      4Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-4.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-                <div class="earn__content-item" data-tabs="5">
-                  <div class="earn__info">
-                    <div class="earn__item-title">
-                      5Заработок
-                      <div>За выполнения заданий</div>
-                    </div>
-                    <ul class="earn__list">
-                      <li class="earn__item">
-                        Прочтение статей и написание отзывов -
-                        <b>от 50 копеек;</b>
-                      </li>
-                      <li class="earn__item">
-                        Рецензии к видео роликам - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Оценка юзабилити сайта - <b>от 1 рубля;</b>
-                      </li>
-                      <li class="earn__item">
-                        Тестирование приложений - <b>от 2 рублей;</b>
-                      </li>
-                    </ul>
-                    <a
-                      href="./registration.html"
-                      class="earn__btn btn text-uppercase"
-                      >зарегистрироваться сейчас</a
-                    >
-                  </div>
-                  <div class="earn__img">
-                    <img
-                      src="img/earn-5.png"
-                      width="612"
-                      height="407"
-                      alt="Заработать на выполнении заданий"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="registration" data-aos="fade-up" id="registration">
-        <div class="container">
-          <div class="tabs-content-item" data-tabs="performer">
-            <div class="registration__inner">
-              <div class="registration__img">
-                <img
-                  src="img/registration-2.png"
-                  width="600"
-                  height="525"
-                  alt="Дайте старт своему проекту!"
-                />
-              </div>
-              <div class="registration__content">
-                <h3 class="registration__title title">
-                  Присоединяйтесь к команде лучших!
-                </h3>
-                <div class="registration__text">
-                  <p>
-                    Зарегистрируйтесь сегодня и начните зарабатывать с нашей биржей. Ваш путь к финансовой свободе начинается здесь!
-                  </p>
-                </div>
-                <a
-                  href="./registration.html"
-                  class="registration__btn btn text-uppercase"
-                  >зарегистрироваться сейчас</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="tabs-content-item is-active" data-tabs="customer">
-            <div class="registration__inner">
-              <div class="registration__img">
-                <img
-                  src="img/registration.png"
-                  width="600"
-                  height="525"
-                  alt="Дайте старт своему проекту!"
-                />
-              </div>
-              <div class="registration__content">
-                <h3 class="registration__title title">
-                  Дайте старт своему проекту!
-                </h3>
-                <div class="registration__text">
-                  <p>
-                    Присоединяйтесь к нам сегодня и найдите лучших специалистов
-                    для своих задач. Сделайте свои идеи реальностью с нашей
-                    помощью!
-                  </p>
-                </div>
-                <a
-                  href="./registration.html"
-                  class="registration__btn btn text-uppercase"
-                  >зарегистрироваться сейчас</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <a href="./" class="footer__logo">
-            <img src="img/logo-white.png" alt="MJPublic logo" />
-            <span>MJPublic</span>
-          </a>
-          <div class="footer__main">
-            <ul class="footer__list">
-              <li><a href="#about">О нас в цифрах</a></li>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="./" class="header__logo">
+          <img src="img/logo.png" alt="MJPublic logo" />
+          <span>MJPublic</span>
+        </a>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#about">О нас</a></li>
               <li><a href="#start">С чего начать</a></li>
               <li><a href="#benefits">Наши преимущества</a></li>
+              <li><a href="#earn">Заработок в интернете</a></li>
             </ul>
-            <ul class="footer__list">
-              <li><a href="#partner-program">Партнерская программа</a></li>
-              <li><a href="#earn">Заработок в интеренете</a></li>
-              <li><a href="#hero">В начало</a></li>
+          </nav>
+          <div class="header__buttons">
+            <a href="./registration.html#login" class="header__btn header__btn--login">
+              Вход
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.75 4.25C14.75 4.05109 14.829 3.86032 14.9697 3.71967C15.1103 3.57902 15.3011 3.5 15.5 3.5H19C19.966 3.5 20.75 4.284 20.75 5.25V19.25C20.75 19.7141 20.5656 20.1592 20.2374 20.4874C19.9092 20.8156 19.4641 21 19 21H15.5C15.3011 21 15.1103 20.921 14.9697 20.7803C14.829 20.6397 14.75 20.4489 14.75 20.25C14.75 20.0511 14.829 19.8603 14.9697 19.7197C15.1103 19.579 15.3011 19.5 15.5 19.5H19C19.0663 19.5 19.1299 19.4737 19.1768 19.4268C19.2237 19.3799 19.25 19.3163 19.25 19.25V5.25C19.25 5.1837 19.2237 5.12011 19.1768 5.07322C19.1299 5.02634 19.0663 5 19 5H15.5C15.3011 5 15.1103 4.92098 14.9697 4.78033C14.829 4.63968 14.75 4.44891 14.75 4.25ZM2.75 12.25C2.75 12.0511 2.82902 11.8603 2.96967 11.7197C3.11032 11.579 3.30109 11.5 3.5 11.5H13.19L9.97 8.28C9.83752 8.13782 9.7654 7.94978 9.76882 7.75548C9.77225 7.56118 9.85097 7.37579 9.98838 7.23838C10.1258 7.10097 10.3112 7.02225 10.5055 7.01883C10.6998 7.0154 10.8878 7.08752 11.03 7.22L15.53 11.72C15.6705 11.8606 15.7493 12.0512 15.7493 12.25C15.7493 12.4488 15.6705 12.6394 15.53 12.78L11.03 17.28C10.9613 17.3537 10.8785 17.4128 10.7865 17.4538C10.6945 17.4948 10.5952 17.5168 10.4945 17.5186C10.3938 17.5204 10.2938 17.5018 10.2004 17.4641C10.107 17.4264 10.0222 17.3703 9.95096 17.299C9.87974 17.2278 9.8236 17.143 9.78588 17.0496C9.74816 16.9562 9.72963 16.8562 9.73141 16.7555C9.73318 16.6548 9.75523 16.5555 9.79622 16.4635C9.83721 16.3715 9.89631 16.2887 9.97 16.22L13.19 13H3.5C3.30109 13 3.11032 12.921 2.96967 12.7803C2.82902 12.6397 2.75 12.4489 2.75 12.25Z"
+                  fill="black" />
+              </svg>
+            </a>
+            <a href="./registration.html" class="header__btn">Регистрация</a>
+          </div>
+        </div>
+        <button class="burger"><span></span></button>
+      </div>
+    </div>
+    <div class="header__overlay"></div>
+  </header>
+
+  <div class="main-content">
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <div class="tabs-content-item" data-tabs="performer">
+              <div class="hero__info hero__info--1">
+                <h1 class="hero__title title">
+                  Простые задания, большие возможности!
+                </h1>
+                <p class="hero__text">
+                  Эффективный заработок на легких заданиях. <br> Присоединяйтесь к нам и начните зарабатывать на своем
+                  времени!
+                </p>
+              </div>
+            </div>
+            <div class="tabs-content-item is-active" data-tabs="customer">
+              <div class="hero__info hero__info--2">
+                <h1 class="hero__title title">
+                  Ведущая платформа крауд-маркетинга и социального продвижения
+                </h1>
+                <p class="hero__text">
+                  Предоставление авторов и качественное выполнение - наша
+                  главная цель в достижении ваших целей по продвижению.
+                </p>
+              </div>
+            </div>
+            <ul class="hero__tabs">
+              <li class="hero__tab" role="button" tabindex="0" data-tabs="performer">
+                <span>Для исполнителей</span>
+              </li>
+              <li class="hero__tab is-active" role="button" tabindex="0" data-tabs="customer">
+                <span>Для заказчиков</span>
+              </li>
             </ul>
-            <div class="footer__copy">Все права защищены © 2018-2023 MaJe</div>
+            <a href="./registration.html" class="hero__btn btn">Начать сотрудничество
+            </a>
+          </div>
+          <div class="tabs-content-item" data-tabs="performer">
+            <div class="hero__img hero__img--1">
+              <img src="img/hero-2.png" width="648" height="518" alt="hero" />
+            </div>
+          </div>
+          <div class="tabs-content-item is-active" data-tabs="customer">
+            <div class="hero__img hero__img--2">
+              <img src="img/hero.png" width="648" height="518" alt="hero" />
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="js/aos.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      AOS.init({
-        disable: "tablet",
-        offset: 200, // offset (in px) from the original trigger point
-        duration: 500, // values from 0 to 3000, with step 50ms
-        easing: "ease", // default easing for AOS animations
-        once: true, // whether animation should happen only once - while scrolling down
-      });
-    </script>
-  </body>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__img" data-aos="fade-up">
+            <img src="img/about.png" width="526" height="514" alt="о нас" />
+          </div>
+          <div class="tabs-content-item" data-tabs="performer">
+            <div class="about__content" data-aos="fade-up">
+              <h2 class="about__title title">О нас в цифрах</h2>
+              <div class="about__text">
+                <p>
+                  Тысячи заказчиков объединены на нашей бирже. Ежедневно они выкладывают сотни высокооплачиваемых
+                  заданий, а общее число выплаченной исполнителям суммы достигло внушительного числа. Это подчеркивает
+                  надежность, активность и доверие со стороны наших заказчиков.
+                </p>
+              </div>
+              <div class="about__items" data-aos="fade-up">
+                <div class="about__item about__item--1">
+                  <div class="about__name">Заказчиков</div>
+                  <div class="about__num purecounter" data-purecounter-start="1000" data-purecounter-end="150345">150
+                    345</div>
+                </div>
+                <div class="about__item about__item--2">
+                  <div class="about__name">Активных <br> заданий</div>
+                  <div class="about__num purecounter" data-purecounter-duration="2.3" data-purecounter-start="1000"
+                    data-purecounter-end="150345">150
+                    345</div>
+                  <div class="about__icon about__icon--1">
+                    <svg class="about__icon-line" width="301" height="107" viewBox="0 0 301 107" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M300 30.6577C300 30.6577 213.928 1.00605 120.686 36.2815C27.4448 71.5569 2 106 2 106"
+                        class="about__icon-path" stroke="#A371E0" stroke-width="3" stroke-linejoin="round"
+                        stroke-dasharray="10 10" />
+                    </svg>
+                    <svg class="about__icon-line about__icon-line--mobile" width="48" height="232" viewBox="0 0 48 232"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="about__icon-path" d="M46.3711 1C-12.5509 91.4259 -5.09009 143.473 24.3711 231.5"
+                        stroke="#A371E0" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 10" />
+                    </svg>
+                    <img width="69" height="69" src="img/about-icon-2.svg" alt="Иконка Активных заданий"
+                      class="about__icon-img" />
+                  </div>
+                </div>
+                <div class="about__item about__item--3">
+                  <div class="about__name">Выплачено <br> денег</div>
+                  <div class="about__num purecounter" data-purecounter-duration="1.9" data-purecounter-start="1000"
+                    data-purecounter-end="150345">150
+                    345</div>
+                  <div class="about__icon about__icon--2">
+                    <svg class="about__icon-line" width="291" height="112" viewBox="0 0 291 112" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M290 73.7443C290 73.7443 206.816 102.373 116.703 68.3144C26.591 34.2554 2 0.999996 2 0.999996"
+                        class="about__icon-path" stroke="#A371E0" stroke-width="3" stroke-linejoin="round"
+                        stroke-dasharray="10 10" />
+                    </svg>
+                    <svg class="about__icon-line about__icon-line--mobile" width="48" height="232" viewBox="0 0 48 232"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="about__icon-path" d="M2 1C60.922 91.4259 53.4612 143.473 24 231.5" stroke="#A371E0"
+                        stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 10" />
+                    </svg>
+                    <img width="69" height="69" src="img/about-icon-2-2.svg" alt="Иконка Выплачено денег"
+                      class="about__icon-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content-item is-active" data-tabs="customer">
+            <div class="about__content" data-aos="fade-up">
+              <h2 class="about__title title">О нас в цифрах</h2>
+              <div class="about__text">
+                <p>
+                  Тысячи креативных профессионалов объединены на нашей бирже. Ежедневно они успешно выполняют сотни
+                  заданий, а общее число завершенных проектов достигло впечатляющей цифры. Это подчеркивает нашу
+                  надежность, активность и доверие со стороны наших пользователей.
+                </p>
+              </div>
+              <div class="about__items" data-aos="fade-up">
+                <div class="about__item about__item--1">
+                  <div class="about__name">Исполнителей</div>
+                  <div class="about__num purecounter" data-purecounter-duration="1.9" data-purecounter-start="1000"
+                    data-purecounter-end="150345">150
+                    345</div>
+                </div>
+                <div class="about__item about__item--2">
+                  <div class="about__name">Выполнений в сутки</div>
+                  <div class="about__num purecounter" data-purecounter-start="1000" data-purecounter-end="150345">150
+                    345</div>
+                  <div class="about__icon about__icon--1">
+                    <svg class="about__icon-line" width="301" height="107" viewBox="0 0 301 107" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M300 30.6577C300 30.6577 213.928 1.00605 120.686 36.2815C27.4448 71.5569 2 106 2 106"
+                        class="about__icon-path" stroke="#A371E0" stroke-width="3" stroke-linejoin="round"
+                        stroke-dasharray="10 10" />
+                    </svg>
+                    <svg class="about__icon-line about__icon-line--mobile" width="48" height="232" viewBox="0 0 48 232"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="about__icon-path" d="M46.3711 1C-12.5509 91.4259 -5.09009 143.473 24.3711 231.5"
+                        stroke="#A371E0" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 10" />
+                    </svg>
+                    <img width="69" height="69" src="img/about-icon-1.svg" alt="Иконка Выполнений в сутки"
+                      class="about__icon-img" />
+                  </div>
+                </div>
+                <div class="about__item about__item--3">
+                  <div class="about__name">Выполненных заданий</div>
+                  <div class="about__num purecounter" data-purecounter-duration="2.3" data-purecounter-start="1000"
+                    data-purecounter-end="150345">150
+                    345</div>
+                  <div class="about__icon about__icon--2">
+                    <svg class="about__icon-line" width="291" height="112" viewBox="0 0 291 112" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M290 73.7443C290 73.7443 206.816 102.373 116.703 68.3144C26.591 34.2554 2 0.999996 2 0.999996"
+                        class="about__icon-path" stroke="#A371E0" stroke-width="3" stroke-linejoin="round"
+                        stroke-dasharray="10 10" />
+                    </svg>
+                    <svg class="about__icon-line about__icon-line--mobile" width="48" height="232" viewBox="0 0 48 232"
+                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="about__icon-path" d="M2 1C60.922 91.4259 53.4612 143.473 24 231.5" stroke="#A371E0"
+                        stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 10" />
+                    </svg>
+                    <img width="69" height="69" src="img/about-icon-2.svg" alt="Иконка Выполненных заданий"
+                      class="about__icon-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="start" id="start">
+      <div class="container">
+        <div class="tabs-content-item" data-tabs="performer">
+          <div class="start__inner">
+            <h2 class="start__title title text-center" data-aos="fade-up">
+              С чего начать
+            </h2>
+            <ul class="start__list">
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-1.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Регистрируйтесь
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Регистрируйтесь, заполняйте анкету и получайте персонализированные для вас задания, чтобы сделать
+                      процесс работы удобнее.
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-1.png" width="495" height="398" alt="Регистрируйтесь" />
+                </div>
+              </li>
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-2-2.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Выполняйте задания
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Выбирайте понравившиеся задания и получайте честно заработанные деньги сразу же после проверки
+                      задания!
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-2-2.png" width="495" height="398" alt="Выполняйте задания" />
+                </div>
+              </li>
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-3.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Приглашайте друзей
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Организуйте стабильный пассивный доход, приглашая людей на платформу и получая до 50% с каждого их
+                      выполнения заданий.
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-3.png" width="495" height="398" alt="Приглашайте друзей" />
+                </div>
+              </li>
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-4.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Получайте результат
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Используйте все возможности платформы для достижения максимального результата, не тратя много
+                      времени!
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-4.png" width="495" height="398" alt="Получайте результат" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs-content-item is-active" data-tabs="customer">
+          <div class="start__inner">
+            <h2 class="start__title title text-center" data-aos="fade-up">
+              С чего начать
+            </h2>
+            <ul class="start__list">
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-1.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Регистрируйтесь
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Регистрируйтесь, заполняйте анкету и начните ознакомление с процессом создания заданий через нашу
+                      видео-инструкцию.
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-1.png" width="495" height="398" alt="Регистрируйтесь" />
+                </div>
+              </li>
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-2.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Размещайте задания
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Широкий спектр настроек, оформления и таргетирования задания позволят вашему заданию всегда
+                      находить нужных исполнителей.
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-2.png" width="495" height="398" alt="Размещайте задания" />
+                </div>
+              </li>
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-3.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Приглашайте друзей
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Организуйте стабильный пассивный доход, приглашая людей на платформу и получая до 50% с каждого их
+                      выполнения заданий.
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-3.png" width="495" height="398" alt="Приглашайте друзей" />
+                </div>
+              </li>
+              <li class="start__item" data-aos="fade-up">
+                <div class="start__box">
+                  <div class="start__heading">
+                    <img src="img/start-icon-4.svg" width="65" height="65" alt="иконка с чего начать" />
+                    Получайте результат
+                  </div>
+                  <div class="start__text">
+                    <p>
+                      Гибкая настройка заданий и тысячи надежных исполнителей - залог успеха каждого вашего проекта!
+                    </p>
+                  </div>
+                </div>
+                <div class="start__img">
+                  <img src="img/start-4.png" width="495" height="398" alt="Получайте результат" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="benefits__inner">
+          <h3 class="benefits__title title text-center" data-aos="fade-up">
+            наши преимущества
+          </h3>
+          <div class="tabs-content-item" data-tabs="performer">
+            <ol class="benefits__list">
+              <li class="benefits__item" data-aos="fade-up">
+                <div class="benefits__icon">
+                  <img src="img/benefits-1-2.png" width="210" height="210" alt="иконка преимущества" />
+                </div>
+                <div class="benefits__name">Заработок на простых <br> заданиях</div>
+                <div class="benefits__text">
+                  Большой выбор простых заданий, даст&nbsp;стабильный прирост к вашему дохору.
+                </div>
+              </li>
+              <li class="benefits__item" data-aos="fade-up" data-aos-delay="50">
+                <div class="benefits__icon">
+                  <img src="img/benefits-2-2.png" width="210" height="210" alt="иконка преимущества" />
+                </div>
+                <div class="benefits__name">
+                  Быстрый и удобный <br> вывод
+                </div>
+                <div class="benefits__text">
+                  Минимальная сумма для выплаты - 100&nbsp;руб. Вывод на все популярные системы.
+                </div>
+              </li>
+              <li class="benefits__item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefits__icon">
+                  <img src="img/benefits-3-2.png" width="210" height="210" alt="иконка преимущества" />
+                </div>
+                <div class="benefits__name">Реферальная <br> программа</div>
+                <div class="benefits__text">
+                  Нет времени на задания? <br> Приглашайте друзей и получайте до 50% с выполненных ими заданий!
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="tabs-content-item is-active" data-tabs="customer">
+            <ol class="benefits__list">
+              <li class="benefits__item" data-aos="fade-up">
+                <div class="benefits__icon">
+                  <img src="img/benefits-1.png" width="210" height="210" alt="иконка преимущества" />
+                </div>
+                <div class="benefits__name">Гарантия качества <br> выполнения</div>
+                <div class="benefits__text">
+                  Оплата работы только после вашего подтверждения
+                </div>
+              </li>
+              <li class="benefits__item" data-aos="fade-up" data-aos-delay="50">
+                <div class="benefits__icon">
+                  <img src="img/benefits-2.png" width="210" height="210" alt="иконка преимущества" />
+                </div>
+                <div class="benefits__name">
+                  Распределение выполнений <br> по времени
+                </div>
+                <div class="benefits__text">
+                  Создавайте удобное рассписание для выполнений ваших заданий
+                </div>
+              </li>
+              <li class="benefits__item" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefits__icon">
+                  <img src="img/benefits-3.png" width="210" height="210" alt="иконка преимущества" />
+                </div>
+                <div class="benefits__name">Выгодные цены <br> и бонусы</div>
+                <div class="benefits__text">
+                  Приятные скидки при оптовом продвижении заданий и широкая бонусная система.
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="benefits__program partner-program" data-aos="fade-up" data-aos-delay="100" id="partner-program">
+            <h4 class="partner-program__title">партнерская программа</h4>
+            <div class="partner-program__text">
+              Наш калькулятор поможет оценить приблизительный заработок на&nbsp;основе реферальной программы.
+            </div>
+            <div class="partner-program__row">
+              <div class="partner-program__col">
+                <div class="partner-program__slider-value">
+                  <span>100.000</span> руб.
+                </div>
+                <div id="partner-program-slider" class="partner-program__slider"></div>
+                <div class="partner-program__slider-caption">
+                  выполнений рефералом
+                </div>
+              </div>
+              <div class="partner-program__col">
+                <div class="partner-program__reward-title">
+                  ваше вознаграждение
+                </div>
+                <div class="partner-program__reward-value">
+                  <span>50.000</span> руб.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="earn" data-aos="fade-up" id="earn">
+      <div class="container">
+        <div class="earn__inner">
+          <h3 class="earn__title title text-center">Заработок в интернете</h3>
+          <div class="tabs-content-item earn__tabs-1" data-tabs="performer">
+            <div class="earn__tabs-wrapper">
+              <ul class="earn__tabs">
+                <li class="earn__tab" data-tabs="1">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.9805 7.8125V42.1875H16.668C17.0824 42.1875 17.4798 42.3521 17.7728 42.6451C18.0658 42.9382 18.2305 43.3356 18.2305 43.75C18.2305 44.1644 18.0658 44.5618 17.7728 44.8549C17.4798 45.1479 17.0824 45.3125 16.668 45.3125H11.4596C10.0221 45.3125 8.85547 44.1458 8.85547 42.7083V7.29167C8.85547 5.85417 10.0221 4.6875 11.4596 4.6875H38.543C39.9805 4.6875 41.1471 5.85417 41.1471 7.29167V27.0833C41.1471 27.4977 40.9825 27.8952 40.6895 28.1882C40.3965 28.4812 39.999 28.6458 39.5846 28.6458C39.1702 28.6458 38.7728 28.4812 38.4798 28.1882C38.1868 27.8952 38.0221 27.4977 38.0221 27.0833V7.8125H11.9805ZM23.3742 13.4375C23.6229 13.106 23.7296 12.6893 23.671 12.279C23.6124 11.8688 23.3932 11.4986 23.0617 11.25C22.7302 11.0014 22.3135 10.8946 21.9032 10.9532C21.493 11.0118 21.1229 11.231 20.8742 11.5625L18.8305 14.2875L18.0201 13.4792C17.7239 13.2032 17.3321 13.0529 16.9273 13.0601C16.5225 13.0672 16.1363 13.2312 15.85 13.5175C15.5637 13.8037 15.3997 14.19 15.3926 14.5947C15.3855 14.9995 15.5357 15.3913 15.8117 15.6875L17.8951 17.7708C18.0533 17.929 18.2437 18.0514 18.4533 18.1297C18.6629 18.208 18.8869 18.2403 19.1102 18.2245C19.3334 18.2087 19.5506 18.1451 19.7471 18.0381C19.9436 17.9311 20.1148 17.7831 20.2492 17.6042L23.3742 13.4375ZM27.3326 13.0208C26.9182 13.0208 26.5207 13.1855 26.2277 13.4785C25.9347 13.7715 25.7701 14.1689 25.7701 14.5833C25.7701 14.9977 25.9347 15.3952 26.2277 15.6882C26.5207 15.9812 26.9182 16.1458 27.3326 16.1458H32.5409C32.9553 16.1458 33.3527 15.9812 33.6457 15.6882C33.9388 15.3952 34.1034 14.9977 34.1034 14.5833C34.1034 14.1689 33.9388 13.7715 33.6457 13.4785C33.3527 13.1855 32.9553 13.0208 32.5409 13.0208H27.3326ZM26.7784 25.5167C26.7784 25.2415 26.8877 24.9776 27.0823 24.783C27.2768 24.5885 27.5407 24.4792 27.8159 24.4792C28.091 24.4792 28.3549 24.5885 28.5495 24.783C28.7441 24.9776 28.8534 25.2415 28.8534 25.5167V31.15C28.8531 31.5114 28.9782 31.8618 29.2072 32.1414C29.4363 32.421 29.7552 32.6125 30.1096 32.6833L35.968 33.8542C37.443 34.15 38.3451 35.6521 37.9138 37.0937L36.4596 41.9375H25.0784L20.4534 35C20.3407 34.8284 20.2957 34.6212 20.327 34.4184C20.3583 34.2155 20.4638 34.0315 20.6229 33.9019C20.7821 33.7723 20.9836 33.7064 21.1886 33.7168C21.3935 33.7272 21.5874 33.8133 21.7326 33.9583L24.1034 36.3625C24.321 36.5831 24.5992 36.7341 24.9028 36.7961C25.2063 36.8582 25.5215 36.8287 25.8082 36.7112C26.0949 36.5938 26.3402 36.3937 26.513 36.1365C26.6857 35.8793 26.7781 35.5765 26.7784 35.2667V25.5167ZM27.8159 21.3542C26.7119 21.3542 25.6532 21.7927 24.8726 22.5733C24.0919 23.354 23.6534 24.4127 23.6534 25.5167V31.4896C22.9209 30.8896 21.9975 30.5724 21.0509 30.5956C20.1044 30.6188 19.1976 30.9809 18.4954 31.616C17.7932 32.2511 17.3422 33.1171 17.2244 34.0566C17.1066 34.996 17.3298 35.9466 17.8534 36.7354L22.9409 44.3688C23.0836 44.5828 23.2769 44.7583 23.5036 44.8797C23.7304 45.001 23.9837 45.0646 24.2409 45.0646H37.6221C37.9582 45.0643 38.2852 44.9558 38.5546 44.755C38.8241 44.5542 39.0216 44.2719 39.118 43.95L40.9055 37.9917C41.1329 37.2342 41.1997 36.4376 41.1014 35.6529C41.0032 34.8682 40.7421 34.1126 40.335 33.4346C39.9278 32.7566 39.3835 32.1711 38.737 31.7156C38.0905 31.2602 37.356 30.9447 36.5805 30.7896L31.9784 29.8708V25.5167C31.9784 24.4127 31.5398 23.354 30.7592 22.5733C29.9786 21.7927 28.9199 21.3542 27.8159 21.3542Z"
+                      fill="black" />
+                  </svg>
+                  Произвольные задания
+                </li>
+                <li class="earn__tab" data-tabs="2">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.0625 10.4167C14.0625 8.97917 15.2292 7.8125 16.6667 7.8125H33.3333C34.7708 7.8125 35.9375 8.97917 35.9375 10.4167V27.7187C35.9375 28.1332 36.1021 28.5306 36.3951 28.8236C36.6882 29.1166 37.0856 29.2812 37.5 29.2812C37.9144 29.2812 38.3118 29.1166 38.6049 28.8236C38.8979 28.5306 39.0625 28.1332 39.0625 27.7187V10.4167C39.0625 8.8972 38.4589 7.43996 37.3845 6.36553C36.31 5.29111 34.8528 4.6875 33.3333 4.6875H16.6667C15.1472 4.6875 13.69 5.29111 12.6155 6.36553C11.5411 7.43996 10.9375 8.8972 10.9375 10.4167V39.5833C10.9375 41.1028 11.5411 42.56 12.6155 43.6345C13.69 44.7089 15.1472 45.3125 16.6667 45.3125C17.0811 45.3125 17.4785 45.1479 17.7715 44.8549C18.0645 44.5618 18.2292 44.1644 18.2292 43.75C18.2292 43.3356 18.0645 42.9382 17.7715 42.6451C17.4785 42.3521 17.0811 42.1875 16.6667 42.1875C15.2292 42.1875 14.0625 41.0208 14.0625 39.5833V10.4167ZM22.3958 11.4583C22.3958 11.0439 22.5605 10.6465 22.8535 10.3535C23.1465 10.0605 23.5439 9.89583 23.9583 9.89583H26.0417C26.4561 9.89583 26.8535 10.0605 27.1465 10.3535C27.4395 10.6465 27.6042 11.0439 27.6042 11.4583C27.6042 11.8727 27.4395 12.2702 27.1465 12.5632C26.8535 12.8562 26.4561 13.0208 26.0417 13.0208H23.9583C23.5439 13.0208 23.1465 12.8562 22.8535 12.5632C22.5605 12.2702 22.3958 11.8727 22.3958 11.4583ZM26.5354 24.4792C26.252 24.4792 25.9801 24.5918 25.7797 24.7922C25.5793 24.9926 25.4667 25.2645 25.4667 25.5479V35.4167C25.4668 35.7267 25.3747 36.0297 25.2021 36.2873C25.0296 36.5448 24.7842 36.7452 24.4974 36.8629C24.2106 36.9806 23.8953 37.0104 23.5915 36.9483C23.2878 36.8863 23.0094 36.7353 22.7917 36.5146L20.3896 34.0812C20.2404 33.9277 20.0391 33.8355 19.8253 33.8231C19.6115 33.8106 19.4008 33.8787 19.2348 34.0139C19.0688 34.1491 18.9594 34.3416 18.9283 34.5534C18.8971 34.7653 18.9465 34.9811 19.0667 35.1583L23.7542 42.1875H35.2958L36.7708 37.2708C36.8751 36.9235 36.9056 36.5583 36.8605 36.1985C36.8154 35.8387 36.6957 35.4923 36.509 35.1814C36.3223 34.8706 36.0727 34.6022 35.7763 34.3933C35.4798 34.1845 35.1431 34.0399 34.7875 33.9687L28.8604 32.7812C28.5063 32.7105 28.1877 32.5193 27.9587 32.2401C27.7297 31.9609 27.6044 31.6111 27.6042 31.25V25.5479C27.6042 25.2645 27.4916 24.9926 27.2911 24.7922C27.0907 24.5918 26.8189 24.4792 26.5354 24.4792ZM22.3417 25.5479C22.3417 24.4357 22.7835 23.369 23.57 22.5825C24.3565 21.796 25.4232 21.3542 26.5354 21.3542C27.6477 21.3542 28.7144 21.796 29.5008 22.5825C30.2873 23.369 30.7292 24.4357 30.7292 25.5479V29.9687L35.4 30.9042C36.1821 31.0606 36.9229 31.3786 37.5751 31.8378C38.2272 32.297 38.7763 32.8873 39.1871 33.5709C39.598 34.2546 39.8616 35.0165 39.961 35.8078C40.0604 36.5992 39.9935 37.4026 39.7646 38.1667L37.9542 44.1979C37.8578 44.5198 37.6603 44.8021 37.3908 45.0029C37.1214 45.2037 36.7944 45.3123 36.4583 45.3125H22.9167C22.6594 45.3125 22.4062 45.249 22.1794 45.1276C21.9526 45.0062 21.7593 44.8307 21.6167 44.6167L16.4667 36.8917C15.9328 36.0943 15.7049 35.1309 15.8248 34.1788C15.9448 33.2268 16.4047 32.3501 17.1197 31.7101C17.8347 31.0701 18.7568 30.7099 19.7163 30.6958C20.6758 30.6817 21.6081 31.0147 22.3417 31.6333V25.55V25.5479Z"
+                      fill="black" />
+                  </svg>
+                  Оценка приложений
+                </li>
+                <li class="earn__tab is-active" data-tabs="3">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M23.5138 23.923C23.5283 23.6809 23.5989 23.4455 23.7201 23.2355L33.0951 6.99587C33.8602 5.69073 35.1105 4.74121 36.5731 4.35451C38.0358 3.96781 39.592 4.17534 40.9022 4.9318C42.2123 5.68826 43.1701 6.93224 43.5665 8.39227C43.9629 9.85231 43.7657 11.4099 43.018 12.725L33.643 28.9646C33.5216 29.174 33.3533 29.3523 33.1513 29.4855L25.3763 34.6209C25.1341 34.7808 24.8522 34.8702 24.5621 34.8789C24.2719 34.8876 23.9851 34.8154 23.7338 34.6702C23.4824 34.5251 23.2765 34.3128 23.139 34.0572C23.0015 33.8015 22.938 33.5127 22.9555 33.223L23.5138 23.923ZM26.6096 24.4771L26.2617 30.2896L31.1201 27.0834L37.4284 16.1605L32.918 13.5563L26.6096 24.4792V24.4771ZM40.3117 11.1646L38.9909 13.45L34.4805 10.8459L35.8013 8.55837C35.9711 8.25981 36.1982 7.99778 36.4696 7.78736C36.741 7.57694 37.0514 7.42229 37.3828 7.3323C37.7143 7.24232 38.0602 7.21878 38.4008 7.26305C38.7414 7.30732 39.0698 7.41851 39.3673 7.59024C39.6647 7.76196 39.9252 7.99082 40.1338 8.26363C40.3424 8.53645 40.495 8.84784 40.5828 9.17987C40.6706 9.51189 40.6918 9.85801 40.6453 10.1983C40.5988 10.5386 40.4854 10.8663 40.3117 11.1625V11.1646ZM26.043 9.89587H11.9805V42.1875H35.9388V32.2917C35.9388 31.8773 36.1034 31.4799 36.3964 31.1869C36.6895 30.8938 37.0869 30.7292 37.5013 30.7292C37.9157 30.7292 38.3131 30.8938 38.6062 31.1869C38.8992 31.4799 39.0638 31.8773 39.0638 32.2917V42.7084C39.0638 44.1459 37.8971 45.3125 36.4596 45.3125H11.4596C10.0221 45.3125 8.85547 44.1459 8.85547 42.7084V9.37504C8.85547 7.93754 10.0221 6.77087 11.4596 6.77087H26.043C26.4574 6.77087 26.8548 6.93549 27.1478 7.22852C27.4408 7.52154 27.6055 7.91897 27.6055 8.33337C27.6055 8.74777 27.4408 9.1452 27.1478 9.43823C26.8548 9.73125 26.4574 9.89587 26.043 9.89587Z"
+                      fill="black" />
+                  </svg>
+                  Копирайтинг и Рерайтинг
+                </li>
+                <li class="earn__tab" data-tabs="4">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.75 7.8125C16.678 7.8125 14.6909 8.6356 13.2257 10.1007C11.7606 11.5659 10.9375 13.553 10.9375 15.625C10.9375 17.697 11.7606 19.6841 13.2257 21.1493C14.6909 22.6144 16.678 23.4375 18.75 23.4375C20.822 23.4375 22.8091 22.6144 24.2743 21.1493C25.7394 19.6841 26.5625 17.697 26.5625 15.625C26.5625 13.553 25.7394 11.5659 24.2743 10.1007C22.8091 8.6356 20.822 7.8125 18.75 7.8125ZM7.8125 15.625C7.8125 14.1887 8.09541 12.7664 8.64507 11.4394C9.19473 10.1124 10.0004 8.90666 11.016 7.89102C12.0317 6.87538 13.2374 6.06973 14.5644 5.52007C15.8914 4.97041 17.3137 4.6875 18.75 4.6875C20.1863 4.6875 21.6086 4.97041 22.9356 5.52007C24.2626 6.06973 25.4683 6.87538 26.484 7.89102C27.4996 8.90666 28.3053 10.1124 28.8549 11.4394C29.4046 12.7664 29.6875 14.1887 29.6875 15.625C29.6875 18.5258 28.5352 21.3078 26.484 23.359C24.4328 25.4102 21.6508 26.5625 18.75 26.5625C15.8492 26.5625 13.0672 25.4102 11.016 23.359C8.96484 21.3078 7.8125 18.5258 7.8125 15.625ZM18.75 32.8125C15.8492 32.8125 13.0672 33.9648 11.016 36.016C8.96484 38.0672 7.8125 40.8492 7.8125 43.75C7.8125 44.1644 7.64788 44.5618 7.35485 44.8549C7.06183 45.1479 6.6644 45.3125 6.25 45.3125C5.8356 45.3125 5.43817 45.1479 5.14515 44.8549C4.85212 44.5618 4.6875 44.1644 4.6875 43.75C4.6875 40.0204 6.16908 36.4435 8.80631 33.8063C11.4435 31.1691 15.0204 29.6875 18.75 29.6875C22.4796 29.6875 26.0565 31.1691 28.6937 33.8063C31.3309 36.4435 32.8125 40.0204 32.8125 43.75C32.8125 44.1644 32.6479 44.5618 32.3549 44.8549C32.0618 45.1479 31.6644 45.3125 31.25 45.3125C30.8356 45.3125 30.4382 45.1479 30.1451 44.8549C29.8521 44.5618 29.6875 44.1644 29.6875 43.75C29.6875 40.8492 28.5352 38.0672 26.484 36.016C24.4328 33.9648 21.6508 32.8125 18.75 32.8125ZM33.7792 10.2625C33.3819 10.1443 32.9539 10.1887 32.5894 10.386C32.2249 10.5833 31.9537 10.9173 31.8354 11.3146C31.7172 11.7119 31.7616 12.1398 31.9589 12.5044C32.1562 12.8689 32.4902 13.1401 32.8875 13.2583C34.2018 13.6561 35.3296 14.5123 36.066 15.6713C36.8024 16.8303 37.0983 18.2151 36.9 19.5738C36.7018 20.9325 36.0224 22.175 34.9855 23.0752C33.9487 23.9754 32.6231 24.4736 31.25 24.4792C30.8356 24.4792 30.4382 24.6438 30.1451 24.9368C29.8521 25.2298 29.6875 25.6273 29.6875 26.0417V28.125C29.6875 28.5394 29.8521 28.9368 30.1451 29.2299C30.4382 29.5229 30.8356 29.6875 31.25 29.6875C33.5983 29.6875 35.8504 30.6203 37.5108 32.2808C39.1713 33.9413 40.1042 36.1934 40.1042 38.5417C40.1042 38.9561 40.2688 39.3535 40.5618 39.6465C40.8548 39.9395 41.2523 40.1042 41.6667 40.1042C42.0811 40.1042 42.4785 39.9395 42.7715 39.6465C43.0646 39.3535 43.2292 38.9561 43.2292 38.5417C43.2292 35.9252 42.3727 33.3807 40.7904 31.2969C39.2081 29.2131 36.987 27.7047 34.4667 27.0021C36.1862 26.332 37.6535 25.1415 38.6634 23.5969C39.6734 22.0523 40.1756 20.2307 40.0998 18.3868C40.0241 16.5429 39.3742 14.7687 38.241 13.3121C37.1078 11.8555 35.5479 10.7893 33.7792 10.2625Z"
+                      fill="black" />
+                  </svg>
+                  Социальные сети
+                </li>
+                <li class="earn__tab" data-tabs="5">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.7292 8.99167C14.8173 10.5307 11.6021 13.4451 9.6875 17.1875H17.4354C17.7342 14.4364 18.1673 11.7013 18.7292 8.99167ZM22.125 8.05208C21.4454 11.0671 20.9294 14.1167 20.5792 17.1875H29.4229C29.072 14.1167 28.5553 11.0671 27.875 8.05208C25.9717 7.73137 24.0282 7.73137 22.125 8.05208ZM17.1667 20.3125H8.45833C8.02813 21.8378 7.8108 23.4152 7.8125 25C7.8125 26.625 8.0375 28.1979 8.45833 29.6875H17.1667C16.9626 26.5658 16.9626 23.4342 17.1667 20.3125ZM20.2979 29.6875C20.0847 26.5661 20.0847 23.4339 20.2979 20.3125H29.7021C29.9167 23.4583 29.9167 26.5562 29.7021 29.6875H20.3H20.2979ZM17.4333 32.8125H9.6875C11.6025 36.5541 14.8177 39.4678 18.7292 41.0062C18.1658 38.2974 17.7333 35.563 17.4333 32.8125ZM22.125 41.9479C21.4445 38.9329 20.9278 35.8833 20.5771 32.8125H29.4229C29.0722 35.8833 28.5554 38.9329 27.875 41.9479C25.9717 42.2682 24.0283 42.2682 22.125 41.9479ZM32.8354 29.6875C33.0396 26.5583 33.0396 23.4583 32.8354 20.3125H41.5396C41.9625 21.8021 42.1875 23.375 42.1875 25C42.1891 26.5848 41.9718 28.1622 41.5417 29.6875H32.8354ZM31.2729 8.99375C35.1844 10.5322 38.3996 13.4459 40.3146 17.1875H32.5646C32.2657 14.4371 31.8346 11.7027 31.2729 8.99375ZM32.5646 32.8125H40.3146C38.3996 36.5541 35.1844 39.4678 31.2729 41.0062C31.8479 38.2062 32.2792 35.4896 32.5646 32.8125ZM4.6875 25C4.6875 13.7812 13.7812 4.6875 25 4.6875C36.2187 4.6875 45.3125 13.7812 45.3125 25C45.3125 36.2187 36.2187 45.3125 25 45.3125C13.7812 45.3125 4.6875 36.2187 4.6875 25Z"
+                      fill="black" />
+                  </svg>
+                  Наполнение сайтов
+                </li>
+              </ul>
+            </div>
+            <div class="earn__content">
+              <div class="earn__content-item" data-tabs="1">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    1Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-1.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item" data-tabs="2">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    2Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-2.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item is-active" data-tabs="3">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-3.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item" data-tabs="4">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    4Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-4.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item" data-tabs="5">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    5Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-5.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-content-item is-active earn__tabs-2" data-tabs="customer">
+            <div class="earn__tabs-wrapper">
+              <ul class="earn__tabs">
+                <li class="earn__tab" data-tabs="1">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.9805 7.8125V42.1875H16.668C17.0824 42.1875 17.4798 42.3521 17.7728 42.6451C18.0658 42.9382 18.2305 43.3356 18.2305 43.75C18.2305 44.1644 18.0658 44.5618 17.7728 44.8549C17.4798 45.1479 17.0824 45.3125 16.668 45.3125H11.4596C10.0221 45.3125 8.85547 44.1458 8.85547 42.7083V7.29167C8.85547 5.85417 10.0221 4.6875 11.4596 4.6875H38.543C39.9805 4.6875 41.1471 5.85417 41.1471 7.29167V27.0833C41.1471 27.4977 40.9825 27.8952 40.6895 28.1882C40.3965 28.4812 39.999 28.6458 39.5846 28.6458C39.1702 28.6458 38.7728 28.4812 38.4798 28.1882C38.1868 27.8952 38.0221 27.4977 38.0221 27.0833V7.8125H11.9805ZM23.3742 13.4375C23.6229 13.106 23.7296 12.6893 23.671 12.279C23.6124 11.8688 23.3932 11.4986 23.0617 11.25C22.7302 11.0014 22.3135 10.8946 21.9032 10.9532C21.493 11.0118 21.1229 11.231 20.8742 11.5625L18.8305 14.2875L18.0201 13.4792C17.7239 13.2032 17.3321 13.0529 16.9273 13.0601C16.5225 13.0672 16.1363 13.2312 15.85 13.5175C15.5637 13.8037 15.3997 14.19 15.3926 14.5947C15.3855 14.9995 15.5357 15.3913 15.8117 15.6875L17.8951 17.7708C18.0533 17.929 18.2437 18.0514 18.4533 18.1297C18.6629 18.208 18.8869 18.2403 19.1102 18.2245C19.3334 18.2087 19.5506 18.1451 19.7471 18.0381C19.9436 17.9311 20.1148 17.7831 20.2492 17.6042L23.3742 13.4375ZM27.3326 13.0208C26.9182 13.0208 26.5207 13.1855 26.2277 13.4785C25.9347 13.7715 25.7701 14.1689 25.7701 14.5833C25.7701 14.9977 25.9347 15.3952 26.2277 15.6882C26.5207 15.9812 26.9182 16.1458 27.3326 16.1458H32.5409C32.9553 16.1458 33.3527 15.9812 33.6457 15.6882C33.9388 15.3952 34.1034 14.9977 34.1034 14.5833C34.1034 14.1689 33.9388 13.7715 33.6457 13.4785C33.3527 13.1855 32.9553 13.0208 32.5409 13.0208H27.3326ZM26.7784 25.5167C26.7784 25.2415 26.8877 24.9776 27.0823 24.783C27.2768 24.5885 27.5407 24.4792 27.8159 24.4792C28.091 24.4792 28.3549 24.5885 28.5495 24.783C28.7441 24.9776 28.8534 25.2415 28.8534 25.5167V31.15C28.8531 31.5114 28.9782 31.8618 29.2072 32.1414C29.4363 32.421 29.7552 32.6125 30.1096 32.6833L35.968 33.8542C37.443 34.15 38.3451 35.6521 37.9138 37.0937L36.4596 41.9375H25.0784L20.4534 35C20.3407 34.8284 20.2957 34.6212 20.327 34.4184C20.3583 34.2155 20.4638 34.0315 20.6229 33.9019C20.7821 33.7723 20.9836 33.7064 21.1886 33.7168C21.3935 33.7272 21.5874 33.8133 21.7326 33.9583L24.1034 36.3625C24.321 36.5831 24.5992 36.7341 24.9028 36.7961C25.2063 36.8582 25.5215 36.8287 25.8082 36.7112C26.0949 36.5938 26.3402 36.3937 26.513 36.1365C26.6857 35.8793 26.7781 35.5765 26.7784 35.2667V25.5167ZM27.8159 21.3542C26.7119 21.3542 25.6532 21.7927 24.8726 22.5733C24.0919 23.354 23.6534 24.4127 23.6534 25.5167V31.4896C22.9209 30.8896 21.9975 30.5724 21.0509 30.5956C20.1044 30.6188 19.1976 30.9809 18.4954 31.616C17.7932 32.2511 17.3422 33.1171 17.2244 34.0566C17.1066 34.996 17.3298 35.9466 17.8534 36.7354L22.9409 44.3688C23.0836 44.5828 23.2769 44.7583 23.5036 44.8797C23.7304 45.001 23.9837 45.0646 24.2409 45.0646H37.6221C37.9582 45.0643 38.2852 44.9558 38.5546 44.755C38.8241 44.5542 39.0216 44.2719 39.118 43.95L40.9055 37.9917C41.1329 37.2342 41.1997 36.4376 41.1014 35.6529C41.0032 34.8682 40.7421 34.1126 40.335 33.4346C39.9278 32.7566 39.3835 32.1711 38.737 31.7156C38.0905 31.2602 37.356 30.9447 36.5805 30.7896L31.9784 29.8708V25.5167C31.9784 24.4127 31.5398 23.354 30.7592 22.5733C29.9786 21.7927 28.9199 21.3542 27.8159 21.3542Z"
+                      fill="black" />
+                  </svg>
+                  Произвольные задания
+                </li>
+                <li class="earn__tab" data-tabs="2">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.0625 10.4167C14.0625 8.97917 15.2292 7.8125 16.6667 7.8125H33.3333C34.7708 7.8125 35.9375 8.97917 35.9375 10.4167V27.7187C35.9375 28.1332 36.1021 28.5306 36.3951 28.8236C36.6882 29.1166 37.0856 29.2812 37.5 29.2812C37.9144 29.2812 38.3118 29.1166 38.6049 28.8236C38.8979 28.5306 39.0625 28.1332 39.0625 27.7187V10.4167C39.0625 8.8972 38.4589 7.43996 37.3845 6.36553C36.31 5.29111 34.8528 4.6875 33.3333 4.6875H16.6667C15.1472 4.6875 13.69 5.29111 12.6155 6.36553C11.5411 7.43996 10.9375 8.8972 10.9375 10.4167V39.5833C10.9375 41.1028 11.5411 42.56 12.6155 43.6345C13.69 44.7089 15.1472 45.3125 16.6667 45.3125C17.0811 45.3125 17.4785 45.1479 17.7715 44.8549C18.0645 44.5618 18.2292 44.1644 18.2292 43.75C18.2292 43.3356 18.0645 42.9382 17.7715 42.6451C17.4785 42.3521 17.0811 42.1875 16.6667 42.1875C15.2292 42.1875 14.0625 41.0208 14.0625 39.5833V10.4167ZM22.3958 11.4583C22.3958 11.0439 22.5605 10.6465 22.8535 10.3535C23.1465 10.0605 23.5439 9.89583 23.9583 9.89583H26.0417C26.4561 9.89583 26.8535 10.0605 27.1465 10.3535C27.4395 10.6465 27.6042 11.0439 27.6042 11.4583C27.6042 11.8727 27.4395 12.2702 27.1465 12.5632C26.8535 12.8562 26.4561 13.0208 26.0417 13.0208H23.9583C23.5439 13.0208 23.1465 12.8562 22.8535 12.5632C22.5605 12.2702 22.3958 11.8727 22.3958 11.4583ZM26.5354 24.4792C26.252 24.4792 25.9801 24.5918 25.7797 24.7922C25.5793 24.9926 25.4667 25.2645 25.4667 25.5479V35.4167C25.4668 35.7267 25.3747 36.0297 25.2021 36.2873C25.0296 36.5448 24.7842 36.7452 24.4974 36.8629C24.2106 36.9806 23.8953 37.0104 23.5915 36.9483C23.2878 36.8863 23.0094 36.7353 22.7917 36.5146L20.3896 34.0812C20.2404 33.9277 20.0391 33.8355 19.8253 33.8231C19.6115 33.8106 19.4008 33.8787 19.2348 34.0139C19.0688 34.1491 18.9594 34.3416 18.9283 34.5534C18.8971 34.7653 18.9465 34.9811 19.0667 35.1583L23.7542 42.1875H35.2958L36.7708 37.2708C36.8751 36.9235 36.9056 36.5583 36.8605 36.1985C36.8154 35.8387 36.6957 35.4923 36.509 35.1814C36.3223 34.8706 36.0727 34.6022 35.7763 34.3933C35.4798 34.1845 35.1431 34.0399 34.7875 33.9687L28.8604 32.7812C28.5063 32.7105 28.1877 32.5193 27.9587 32.2401C27.7297 31.9609 27.6044 31.6111 27.6042 31.25V25.5479C27.6042 25.2645 27.4916 24.9926 27.2911 24.7922C27.0907 24.5918 26.8189 24.4792 26.5354 24.4792ZM22.3417 25.5479C22.3417 24.4357 22.7835 23.369 23.57 22.5825C24.3565 21.796 25.4232 21.3542 26.5354 21.3542C27.6477 21.3542 28.7144 21.796 29.5008 22.5825C30.2873 23.369 30.7292 24.4357 30.7292 25.5479V29.9687L35.4 30.9042C36.1821 31.0606 36.9229 31.3786 37.5751 31.8378C38.2272 32.297 38.7763 32.8873 39.1871 33.5709C39.598 34.2546 39.8616 35.0165 39.961 35.8078C40.0604 36.5992 39.9935 37.4026 39.7646 38.1667L37.9542 44.1979C37.8578 44.5198 37.6603 44.8021 37.3908 45.0029C37.1214 45.2037 36.7944 45.3123 36.4583 45.3125H22.9167C22.6594 45.3125 22.4062 45.249 22.1794 45.1276C21.9526 45.0062 21.7593 44.8307 21.6167 44.6167L16.4667 36.8917C15.9328 36.0943 15.7049 35.1309 15.8248 34.1788C15.9448 33.2268 16.4047 32.3501 17.1197 31.7101C17.8347 31.0701 18.7568 30.7099 19.7163 30.6958C20.6758 30.6817 21.6081 31.0147 22.3417 31.6333V25.55V25.5479Z"
+                      fill="black" />
+                  </svg>
+                  Оценка приложений
+                </li>
+                <li class="earn__tab is-active" data-tabs="3">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M23.5138 23.923C23.5283 23.6809 23.5989 23.4455 23.7201 23.2355L33.0951 6.99587C33.8602 5.69073 35.1105 4.74121 36.5731 4.35451C38.0358 3.96781 39.592 4.17534 40.9022 4.9318C42.2123 5.68826 43.1701 6.93224 43.5665 8.39227C43.9629 9.85231 43.7657 11.4099 43.018 12.725L33.643 28.9646C33.5216 29.174 33.3533 29.3523 33.1513 29.4855L25.3763 34.6209C25.1341 34.7808 24.8522 34.8702 24.5621 34.8789C24.2719 34.8876 23.9851 34.8154 23.7338 34.6702C23.4824 34.5251 23.2765 34.3128 23.139 34.0572C23.0015 33.8015 22.938 33.5127 22.9555 33.223L23.5138 23.923ZM26.6096 24.4771L26.2617 30.2896L31.1201 27.0834L37.4284 16.1605L32.918 13.5563L26.6096 24.4792V24.4771ZM40.3117 11.1646L38.9909 13.45L34.4805 10.8459L35.8013 8.55837C35.9711 8.25981 36.1982 7.99778 36.4696 7.78736C36.741 7.57694 37.0514 7.42229 37.3828 7.3323C37.7143 7.24232 38.0602 7.21878 38.4008 7.26305C38.7414 7.30732 39.0698 7.41851 39.3673 7.59024C39.6647 7.76196 39.9252 7.99082 40.1338 8.26363C40.3424 8.53645 40.495 8.84784 40.5828 9.17987C40.6706 9.51189 40.6918 9.85801 40.6453 10.1983C40.5988 10.5386 40.4854 10.8663 40.3117 11.1625V11.1646ZM26.043 9.89587H11.9805V42.1875H35.9388V32.2917C35.9388 31.8773 36.1034 31.4799 36.3964 31.1869C36.6895 30.8938 37.0869 30.7292 37.5013 30.7292C37.9157 30.7292 38.3131 30.8938 38.6062 31.1869C38.8992 31.4799 39.0638 31.8773 39.0638 32.2917V42.7084C39.0638 44.1459 37.8971 45.3125 36.4596 45.3125H11.4596C10.0221 45.3125 8.85547 44.1459 8.85547 42.7084V9.37504C8.85547 7.93754 10.0221 6.77087 11.4596 6.77087H26.043C26.4574 6.77087 26.8548 6.93549 27.1478 7.22852C27.4408 7.52154 27.6055 7.91897 27.6055 8.33337C27.6055 8.74777 27.4408 9.1452 27.1478 9.43823C26.8548 9.73125 26.4574 9.89587 26.043 9.89587Z"
+                      fill="black" />
+                  </svg>
+                  Копирайтинг и Рерайтинг
+                </li>
+                <li class="earn__tab" data-tabs="4">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.75 7.8125C16.678 7.8125 14.6909 8.6356 13.2257 10.1007C11.7606 11.5659 10.9375 13.553 10.9375 15.625C10.9375 17.697 11.7606 19.6841 13.2257 21.1493C14.6909 22.6144 16.678 23.4375 18.75 23.4375C20.822 23.4375 22.8091 22.6144 24.2743 21.1493C25.7394 19.6841 26.5625 17.697 26.5625 15.625C26.5625 13.553 25.7394 11.5659 24.2743 10.1007C22.8091 8.6356 20.822 7.8125 18.75 7.8125ZM7.8125 15.625C7.8125 14.1887 8.09541 12.7664 8.64507 11.4394C9.19473 10.1124 10.0004 8.90666 11.016 7.89102C12.0317 6.87538 13.2374 6.06973 14.5644 5.52007C15.8914 4.97041 17.3137 4.6875 18.75 4.6875C20.1863 4.6875 21.6086 4.97041 22.9356 5.52007C24.2626 6.06973 25.4683 6.87538 26.484 7.89102C27.4996 8.90666 28.3053 10.1124 28.8549 11.4394C29.4046 12.7664 29.6875 14.1887 29.6875 15.625C29.6875 18.5258 28.5352 21.3078 26.484 23.359C24.4328 25.4102 21.6508 26.5625 18.75 26.5625C15.8492 26.5625 13.0672 25.4102 11.016 23.359C8.96484 21.3078 7.8125 18.5258 7.8125 15.625ZM18.75 32.8125C15.8492 32.8125 13.0672 33.9648 11.016 36.016C8.96484 38.0672 7.8125 40.8492 7.8125 43.75C7.8125 44.1644 7.64788 44.5618 7.35485 44.8549C7.06183 45.1479 6.6644 45.3125 6.25 45.3125C5.8356 45.3125 5.43817 45.1479 5.14515 44.8549C4.85212 44.5618 4.6875 44.1644 4.6875 43.75C4.6875 40.0204 6.16908 36.4435 8.80631 33.8063C11.4435 31.1691 15.0204 29.6875 18.75 29.6875C22.4796 29.6875 26.0565 31.1691 28.6937 33.8063C31.3309 36.4435 32.8125 40.0204 32.8125 43.75C32.8125 44.1644 32.6479 44.5618 32.3549 44.8549C32.0618 45.1479 31.6644 45.3125 31.25 45.3125C30.8356 45.3125 30.4382 45.1479 30.1451 44.8549C29.8521 44.5618 29.6875 44.1644 29.6875 43.75C29.6875 40.8492 28.5352 38.0672 26.484 36.016C24.4328 33.9648 21.6508 32.8125 18.75 32.8125ZM33.7792 10.2625C33.3819 10.1443 32.9539 10.1887 32.5894 10.386C32.2249 10.5833 31.9537 10.9173 31.8354 11.3146C31.7172 11.7119 31.7616 12.1398 31.9589 12.5044C32.1562 12.8689 32.4902 13.1401 32.8875 13.2583C34.2018 13.6561 35.3296 14.5123 36.066 15.6713C36.8024 16.8303 37.0983 18.2151 36.9 19.5738C36.7018 20.9325 36.0224 22.175 34.9855 23.0752C33.9487 23.9754 32.6231 24.4736 31.25 24.4792C30.8356 24.4792 30.4382 24.6438 30.1451 24.9368C29.8521 25.2298 29.6875 25.6273 29.6875 26.0417V28.125C29.6875 28.5394 29.8521 28.9368 30.1451 29.2299C30.4382 29.5229 30.8356 29.6875 31.25 29.6875C33.5983 29.6875 35.8504 30.6203 37.5108 32.2808C39.1713 33.9413 40.1042 36.1934 40.1042 38.5417C40.1042 38.9561 40.2688 39.3535 40.5618 39.6465C40.8548 39.9395 41.2523 40.1042 41.6667 40.1042C42.0811 40.1042 42.4785 39.9395 42.7715 39.6465C43.0646 39.3535 43.2292 38.9561 43.2292 38.5417C43.2292 35.9252 42.3727 33.3807 40.7904 31.2969C39.2081 29.2131 36.987 27.7047 34.4667 27.0021C36.1862 26.332 37.6535 25.1415 38.6634 23.5969C39.6734 22.0523 40.1756 20.2307 40.0998 18.3868C40.0241 16.5429 39.3742 14.7687 38.241 13.3121C37.1078 11.8555 35.5479 10.7893 33.7792 10.2625Z"
+                      fill="black" />
+                  </svg>
+                  Социальные сети
+                </li>
+                <li class="earn__tab" data-tabs="5">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.7292 8.99167C14.8173 10.5307 11.6021 13.4451 9.6875 17.1875H17.4354C17.7342 14.4364 18.1673 11.7013 18.7292 8.99167ZM22.125 8.05208C21.4454 11.0671 20.9294 14.1167 20.5792 17.1875H29.4229C29.072 14.1167 28.5553 11.0671 27.875 8.05208C25.9717 7.73137 24.0282 7.73137 22.125 8.05208ZM17.1667 20.3125H8.45833C8.02813 21.8378 7.8108 23.4152 7.8125 25C7.8125 26.625 8.0375 28.1979 8.45833 29.6875H17.1667C16.9626 26.5658 16.9626 23.4342 17.1667 20.3125ZM20.2979 29.6875C20.0847 26.5661 20.0847 23.4339 20.2979 20.3125H29.7021C29.9167 23.4583 29.9167 26.5562 29.7021 29.6875H20.3H20.2979ZM17.4333 32.8125H9.6875C11.6025 36.5541 14.8177 39.4678 18.7292 41.0062C18.1658 38.2974 17.7333 35.563 17.4333 32.8125ZM22.125 41.9479C21.4445 38.9329 20.9278 35.8833 20.5771 32.8125H29.4229C29.0722 35.8833 28.5554 38.9329 27.875 41.9479C25.9717 42.2682 24.0283 42.2682 22.125 41.9479ZM32.8354 29.6875C33.0396 26.5583 33.0396 23.4583 32.8354 20.3125H41.5396C41.9625 21.8021 42.1875 23.375 42.1875 25C42.1891 26.5848 41.9718 28.1622 41.5417 29.6875H32.8354ZM31.2729 8.99375C35.1844 10.5322 38.3996 13.4459 40.3146 17.1875H32.5646C32.2657 14.4371 31.8346 11.7027 31.2729 8.99375ZM32.5646 32.8125H40.3146C38.3996 36.5541 35.1844 39.4678 31.2729 41.0062C31.8479 38.2062 32.2792 35.4896 32.5646 32.8125ZM4.6875 25C4.6875 13.7812 13.7812 4.6875 25 4.6875C36.2187 4.6875 45.3125 13.7812 45.3125 25C45.3125 36.2187 36.2187 45.3125 25 45.3125C13.7812 45.3125 4.6875 36.2187 4.6875 25Z"
+                      fill="black" />
+                  </svg>
+                  Наполнение сайтов
+                </li>
+              </ul>
+            </div>
+            <div class="earn__content">
+              <div class="earn__content-item" data-tabs="1">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    1Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-1.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item" data-tabs="2">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    2Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-2.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item is-active" data-tabs="3">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-3.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item" data-tabs="4">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    4Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-4.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+              <div class="earn__content-item" data-tabs="5">
+                <div class="earn__info">
+                  <div class="earn__item-title">
+                    5Заработок
+                    <div>За выполнения заданий</div>
+                  </div>
+                  <ul class="earn__list">
+                    <li class="earn__item">
+                      Прочтение статей и написание отзывов -
+                      <b>от 50 копеек;</b>
+                    </li>
+                    <li class="earn__item">
+                      Рецензии к видео роликам - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Оценка юзабилити сайта - <b>от 1 рубля;</b>
+                    </li>
+                    <li class="earn__item">
+                      Тестирование приложений - <b>от 2 рублей;</b>
+                    </li>
+                  </ul>
+                  <a href="./registration.html" class="earn__btn btn text-uppercase">зарегистрироваться сейчас</a>
+                </div>
+                <div class="earn__img">
+                  <img src="img/earn-5.png" width="612" height="407" alt="Заработать на выполнении заданий" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration" data-aos="fade-up" id="registration">
+      <div class="container">
+        <div class="tabs-content-item" data-tabs="performer">
+          <div class="registration__inner">
+            <div class="registration__img">
+              <img src="img/registration-2.png" width="600" height="525" alt="Дайте старт своему проекту!" />
+            </div>
+            <div class="registration__content">
+              <h3 class="registration__title title">
+                Присоединяйтесь к команде лучших!
+              </h3>
+              <div class="registration__text">
+                <p>
+                  Зарегистрируйтесь сегодня и начните зарабатывать с нашей биржей. Ваш путь к финансовой свободе
+                  начинается здесь!
+                </p>
+              </div>
+              <a href="./registration.html" class="registration__btn btn text-uppercase">зарегистрироваться сейчас</a>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-content-item is-active" data-tabs="customer">
+          <div class="registration__inner">
+            <div class="registration__img">
+              <img src="img/registration.png" width="600" height="525" alt="Дайте старт своему проекту!" />
+            </div>
+            <div class="registration__content">
+              <h3 class="registration__title title">
+                Дайте старт своему проекту!
+              </h3>
+              <div class="registration__text">
+                <p>
+                  Присоединяйтесь к нам сегодня и найдите лучших специалистов
+                  для своих задач. Сделайте свои идеи реальностью с нашей
+                  помощью!
+                </p>
+              </div>
+              <a href="./registration.html" class="registration__btn btn text-uppercase">зарегистрироваться сейчас</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="./" class="footer__logo">
+          <img src="img/logo-white.png" alt="MJPublic logo" />
+          <span>MJPublic</span>
+        </a>
+        <div class="footer__main">
+          <ul class="footer__list">
+            <li><a href="#about">О нас в цифрах</a></li>
+            <li><a href="#start">С чего начать</a></li>
+            <li><a href="#benefits">Наши преимущества</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li><a href="#partner-program">Партнерская программа</a></li>
+            <li><a href="#earn">Заработок в интеренете</a></li>
+            <li><a href="#hero">В начало</a></li>
+          </ul>
+          <div class="footer__copy">Все права защищены © 2018-2023 MaJe</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/aos.js"></script>
+  <script src="js/purecounter.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    new PureCounter({
+      separator: ' ',
+    });
+    AOS.init({
+      disable: "tablet",
+      offset: 200, // offset (in px) from the original trigger point
+      duration: 500, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+    });
+  </script>
+</body>
+
 </html>

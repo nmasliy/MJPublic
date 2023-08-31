@@ -67,14 +67,14 @@ window.addEventListener("DOMContentLoaded", function () {
     );
 
     noUiSlider.create(slider, {
-      start: 500,
+      start: 50000,
       connect: [true, false],
       range: {
-        min: -5, 
-        max: 1000,
+        min: -49500, 
+        // min: 500, 
+        max: 500000,
       },
-      padding: [105, 0],
-      step: 1,
+      padding: [50000, 0],
     });
 
     slider.noUiSlider.on("update", function (values, handle) {
