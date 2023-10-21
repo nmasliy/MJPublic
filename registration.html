@@ -37,11 +37,11 @@
             <div class="auth__content-item" data-tabs="login">
               <form action="#" class="auth__form form">
                 <div class="form__text">Заполните поля для того, чтобы войти в аккаунт</div>
-                <label class="form__item">
-                  <input type="email" class="form__input form__input--email" placeholder="E-mail" />
+                <label class="form__item form__item--email">
+                  <input type="email" class="form__input" placeholder="E-mail" />
                 </label>
-                <label class="form__item">
-                  <input type="password" class="form__input form__input--password" placeholder="Пароль" />
+                <label class="form__item form__item--password">
+                  <input type="password" class="form__input" placeholder="Пароль" />
                 </label>
                 <div class="text-center">
                   <button class="form__btn form__btn--offset btn text-uppercase">вход</button>
@@ -56,17 +56,17 @@
                 <div class="form__text">
                   Заполните поля для того, чтобы зарегистрироваться
                 </div>
-                <label class="form__item">
-                  <input type="email" class="form__input form__input--email" placeholder="E-mail" />
+                <label class="form__item form__item--email">
+                  <input type="email" class="form__input" placeholder="E-mail" />
                 </label>
-                <label class="form__item">
-                  <input type="text" class="form__input form__input--nickname" placeholder="Никнейм" />
+                <label class="form__item form__item--nickname">
+                  <input type="text" class="form__input" placeholder="Никнейм" />
                 </label>
-                <label class="form__item">
-                  <input type="password" class="form__input form__input--password" placeholder="Пароль" />
+                <label class="form__item form__item--password">
+                  <input type="password" class="form__input" placeholder="Пароль" />
                 </label>
-                <label class="form__item">
-                  <input type="password" class="form__input form__input--password" placeholder="Пароль еще раз" />
+                <label class="form__item form__item--password">
+                  <input type="password" class="form__input" placeholder="Пароль еще раз" />
                 </label>
                 <label class="form__checkbox">
                   <input type="checkbox" />
@@ -98,8 +98,8 @@
           <div class="modal__title">Оставить заявку</div>
           <div class="modal__text">Введите свой e-mail и мы вышлеминструкцию по восстановлению пароля</div>
           <form class="modal__form form" action="#">
-            <label class="form__item">
-              <input type="email" class="form__input form__input--email" placeholder="E-mail" />
+            <label class="form__item form__item--email">
+              <input type="email" class="form__input" placeholder="E-mail" />
             </label>
             <div class="text-center">
               <button class="modal__btn btn text-uppercase">отправить</button>
@@ -118,7 +118,7 @@
           <div class="modal__title">Успешная регистрация</div>
           <div class="modal__text">Письмо с подтверждением отправлено на указанную вами почту</div>
           <div class="text-center">
-            <button class="modal__btn btn text-uppercase">понятно</button>
+            <button class="modal__btn btn text-uppercase" data-modal-close>понятно</button>
           </div>
         </div>
         <button class="modal__close" data-modal-close></button>
